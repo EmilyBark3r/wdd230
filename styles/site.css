@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Pacifico&family=Roboto&family=Rowdies&family=Rubik+Bubbles&display=swap');
 body{
-    font-family: Arial, Helvetica, sans-serif; 
+ font-family: 'Bakbak One', cursive;
+ font-family: 'Pacifico', cursive;
+ font-family: 'Roboto', sans-serif;
+ font-family: 'Rowdies', cursive;
+ font-family: 'Rubik Bubbles', cursive;    
 }
 
 header {
@@ -32,7 +37,7 @@ header div:nth-child(2) {
     margin: 0 auto;
     width: 800px;
     color: #00b2ca;
-    text-shadow: 1.5px 1px #1d4e89;
+    text-shadow: 1px 1px #1d4e89;
 }
 
 footer {
@@ -45,4 +50,8 @@ footer {
     box-shadow: 10px 10px #f79256;
     text-align: center;
     padding: 1rem;
+    font-size: 1.5rem;
 }
+
+
+
