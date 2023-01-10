@@ -19,10 +19,6 @@ header h1{
     text-align: center;
 }
 
-/* h2 {
-    text-align: center;
-} */
-
 header div:nth-child(2) {
     width: 100%;
 }
