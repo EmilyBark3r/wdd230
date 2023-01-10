@@ -2,10 +2,10 @@ body{
     font-family: Arial, Helvetica, sans-serif; 
 }
 
-header, footer {
+header {
     display: flex;
     align-items: center;
-    background-color: rgb(43, 147, 226);
+    background-color: rgb(27, 174, 27);
     color: white;
     border: 2px black solid;
 }
@@ -32,6 +32,11 @@ header div:nth-child(2) {
     width: 800px;
 }
 
-/* footer {
-
-} */
+footer {
+    align-items: center;
+    background-color: rgb(27, 174, 27);
+    color: white;
+    border: 2px black solid;
+    text-align: center;
+    padding: 1rem;
+}
