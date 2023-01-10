@@ -5,14 +5,19 @@ body{
 header {
     display: flex;
     align-items: center;
-    background-color: rgb(27, 174, 27);
-    color: white;
-    border: 2px black solid;
+    background-color:#7dcfb6;
+    color: #00b2ca;
+    text-shadow: 3px 2px #1d4e89;
+    border-radius: 25px;
+    border: 6px #fbd1a2 dashed;
+    box-shadow: 10px 10px #f79256;
 }
 
 header img {
     width: 150px;
     margin: 1rem;
+    border: 6px #fbd1a2 solid;
+    box-shadow: 5px 5px #f79256;
 }
 
 header h1{
@@ -26,13 +31,18 @@ header div:nth-child(2) {
 #content {
     margin: 0 auto;
     width: 800px;
+    color: #00b2ca;
+    text-shadow: 1.5px 1px #1d4e89;
 }
 
 footer {
     align-items: center;
-    background-color: rgb(27, 174, 27);
-    color: white;
-    border: 2px black solid;
+    background-color:#7dcfb6;
+    color: #00b2ca;
+    text-shadow: 1.5px 1px #1d4e89;
+    border-radius: 25px;
+    border: 6px #fbd1a2 dashed;
+    box-shadow: 10px 10px #f79256;
     text-align: center;
     padding: 1rem;
 }
