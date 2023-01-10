@@ -1,15 +1,7 @@
-// //copyright year
-// const today = new Date();
-// document.querySelector('#currentyear').textContent = today.getFullYear();
-
-// //This sets the last modified date on the home page
-// document.querySelector('#lastmodified').textContent = document.lastModified;
-
-
 // Set the year for copyright
 let today = new Date();
 document.querySelector("#currentyear").textContent = today.getFullYear()
-
+//last modified
 document.querySelector('#lastmodified').textContent = document.lastModified;
 
 
