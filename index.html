@@ -7,10 +7,20 @@
     <meta name="description" content="For WDD 230 Assignemt Portal">
     <!--Meta description is for search engines-->
     <title>Assignment Portal for Emily Barker</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/site.css">
-    <link src="script/site.js" defer></script>
+    <!-- <link rel="stylesheet" href="styles/medium.css" media="(max-width: 654px)">
+    <link rel="stylesheet" href="styles/small.css" media="(max-width: 509px)"> -->
+
+    <body onload="allMyFunctions()">
+        <script src="js/all.js"></script>
+    <script src="scripts/currentyear.js"></script>
+    <script src="scripts/lastmodified.js"></script>
+
     <!--defer = wait until site is completed-->
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Pacifico&family=Roboto&family=Rowdies&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <div id="content">
@@ -36,5 +46,8 @@
         <div>Last Updated: <span id="lastmodified"></span></div>    
     </footer>
 </div>
+<script src="js/currentyear.js"></script>
+
+<script src="js/lastmodified.js"></script>
 </body>
 </html>

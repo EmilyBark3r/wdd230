@@ -1,10 +1,8 @@
-// Set the year for copyright
-let today = new Date();
-document.querySelector("#currentyear").textContent = today.getFullYear()
-//last modified
-document.querySelector('#lastmodified').textContent = document.lastModified;
-
-
+function allMyFunctions(){
+    lastUpdated(); 
+    year(); 
+} 
+    
 
 
 
