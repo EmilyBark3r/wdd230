@@ -10,7 +10,7 @@ body{
 header {
     display: flex;
     align-items: center;
-    background-color:#7dcfb6;
+    background-color:purple;
     color: #00b2ca;
     text-shadow: 3px 2px #1d4e89;
     border-radius: 25px;
