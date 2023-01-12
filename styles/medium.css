@@ -1,13 +1,5 @@
 @media only screen and (min-width: 850px) {
-
-  h1 {
-      font-size: 40px;
-  }
-
-  h2 {
-      font-size: 35px;
-  }
-
+    
   header {
     display: flex;
     align-items: center;
