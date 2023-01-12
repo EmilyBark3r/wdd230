@@ -1,13 +1,21 @@
+@media only screen and (max-width: 600px) {
+    @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Pacifico&family=Roboto&family=Rowdies&family=Rubik+Bubbles&display=swap');
+
 body {
     font-size: 20px;
     line-height: 1.5;
     font-family: 'PT Sans Narrow', sans-serif;
-    background-color: #7dcfb6;
+    background-color: white;
+    font-family: 'Bakbak One', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rowdies', cursive;
+    font-family: 'Rubik Bubbles', cursive;    
 }
 
 h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -19,19 +27,17 @@ h2 {
 header,
 main,
 footer {
-    margin: 1.25rem auto;
-    max-width: 750px;
+    margin: 0 auto;
+    max-width: 400px;
 }
 
 header,
 footer {
     background-color: #7dcfb6;
     color: black;
-    text-align: center;
-    padding: 1rem;
-
 }
 
 header img {
-    margin: 15px;
+    margin: 10px;
+}
 }

@@ -1,5 +1,13 @@
-/* @media only screen and (min-width: 850px) {
-    
+@media only screen and (min-width: 850px) {
+    @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Pacifico&family=Roboto&family=Rowdies&family=Rubik+Bubbles&display=swap');
+
+    body {
+        font-family: 'Bakbak One', cursive;
+        font-family: 'Pacifico', cursive;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Rowdies', cursive;
+        font-family: 'Rubik Bubbles', cursive;    
+}
   header {
     display: flex;
     align-items: center;
@@ -29,4 +37,4 @@
       box-shadow: 5px 5px #f79256;
       border: 10px #fbd1a2 solid;
     }
-} */
+}
