@@ -1,5 +1,5 @@
 @media only screen and (min-width: 850px) {
-    
+
   header {
     display: flex;
     align-items: center;
@@ -7,7 +7,7 @@
     color: #00b2ca;
     text-shadow: 3px 2px #1d4e89;
     border-radius: 25px;
-    border: 8px #fbd1a2 dashed;
+    border: 8px #fbd1a2 dotted;
     box-shadow: 10px 10px #f79256;
 }
 
@@ -17,7 +17,7 @@
     color: #00b2ca;
     text-shadow: 1.5px 1px #1d4e89;
     border-radius: 25px;
-    border:8px #fbd1a2 dashed;
+    border:8px #fbd1a2 dotted;
     box-shadow: 10px 10px #f79256;
     text-align: center;
     padding: 1rem;
@@ -27,6 +27,6 @@
   header img {
       float: right;
       box-shadow: 5px 5px #f79256;
-      border: 10px #fbd1a2 solid;
+      border: 10px #fbd1a2 dotted;
     }
 }
