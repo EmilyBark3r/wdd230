@@ -34,7 +34,7 @@ header div:nth-child(2) {
 }
 
 #content {
-    margin: 0 auto;
+    margin: auto;
     width: 800px;
     color: #00b2ca;
     text-shadow: 1px 1px #1d4e89;
