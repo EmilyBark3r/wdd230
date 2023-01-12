@@ -2,7 +2,7 @@ body {
     font-size: 20px;
     line-height: 1.5;
     font-family: 'PT Sans Narrow', sans-serif;
-    background-color: #FFFFFF;
+    background-color: #7dcfb6;
 }
 
 h1 {
@@ -25,7 +25,7 @@ footer {
 
 header,
 footer {
-    background-color: #ffcccc;
+    background-color: #7dcfb6;
     color: black;
     text-align: center;
     padding: 1rem;
