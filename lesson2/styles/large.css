@@ -43,11 +43,11 @@ section {
     overflow: hidden;
 }
 section * {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 h3 {
     margin: 0;
-    font-family: 'Gugi', sans-serif;
+    font-family: 'Playfair Display', serif;
     padding: 10px;
     /* text-align: center; */
     background: #005C69;
@@ -75,6 +75,7 @@ footer {
     background-color: #75ABBC;
     border-radius: 10px 10px 0 0;
     padding: 1em;
+    font-family: 'Roboto', sans-serif;
 }
 #lastmodified {
     padding-top: 5px;
