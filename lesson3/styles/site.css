@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&family=Sofia+Sans:ital@1&display=swap');
+
+
+body {
+    font-family: 'Sofia Sans', sans-serif;
+  }
+
+  header,footer,main {
+    max-width: 640px;
+    margin: 0 auto;
+    border: 3px solid #632C00;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  main {
+    background-color: #F2E797;
+  }
+
+  header, footer {
+    background-color: #632C00;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+  }
+
+  footer {
+    color: #F2E797;
+  }
+
+  img {
+    width: calc(100% - 2px);
+    display: block;
+    margin: 0 auto;
+    max-width: 440px;
+  }
+
+  nav {
+    background-color: #B18D4C;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 3px solid #632C00;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-inline-start: 0px;
+  }
+
+  nav ul li {
+    border: 3px solid #B18D4C;
+    text-align: center;
+    min-width: 210px;
+  }
+
+  nav ul li:hover {
+    background-color: #632C00;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem;
+    text-decoration: none;
+    color: #F2E797;
+  }
+
+  h1 {
+      text-align: center;
+      color: #F2E797;
+  }
+
+  main h1, h2 {
+    color: #B18D4C;
+  }
+
+  main p {
+    color: #071013;
+  }
+
+  .active {
+    background-color: #632C00;
+  }
+  
+  /* Media Query Updates for middle widths */
+  
+  @media screen and (min-width: 640px) {
+      nav ul {
+        flex-direction: row;
+      }
+    }  
