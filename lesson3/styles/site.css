@@ -24,7 +24,7 @@ body {
   }
 
   footer {
-    color: #F2E797;
+    color: #ECFFF8;
   }
 
   img {
@@ -63,18 +63,22 @@ body {
     display: block;
     margin: 0.5rem;
     text-decoration: none;
-    color: #F2E797;
+    color: #ECFFF8;
   }
 
   h1 {
       text-align: center;
-      color: #F2E797;
+      color: #ECFFF8;
+      font-size:xx-large;
   }
 
-  main h1, h2 {
-    color: #B18D4C;
+  h2 {
+    color: #ECFFF8;
   }
 
+  main h1 {
+    color: #071013;
+}
   main p {
     color: #071013;
   }
