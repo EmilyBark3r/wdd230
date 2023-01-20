@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&family=Sofia+Sans:ital@1&display=swap');
 * {
     font-family: 'Playfair Display', serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Sofia Sans', sans-serif;
 }
 
 html {
@@ -20,6 +18,7 @@ header {
     border-radius: 0 0 10px 10px;
     color: #071013;
     padding: 1em;
+    font-family: 'Sofia Sans', sans-serif;
 }
 h1 {
     margin-bottom: 0.25em;
@@ -55,7 +54,8 @@ h3 {
 }
 a  {
     text-decoration: underline;
-    color: black;
+    color: #071013;
+    font-family: 'Playfair Display', serif;
 }
 
 section > div {
