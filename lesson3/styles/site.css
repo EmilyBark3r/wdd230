@@ -53,17 +53,22 @@ body {
     border: 3px solid #B18D4C;
     text-align: center;
     min-width: 210px;
+    color:#ECFFF8;
   }
 
   nav ul li:hover {
     background-color: #632C00;
   }
 
+  nav a:hover {
+    color:#ECFFF8;
+  }
+
   nav a {
     display: block;
     margin: 0.5rem;
     text-decoration: none;
-    color: #ECFFF8;
+    color: #071013;
   }
 
   h1 {
@@ -123,7 +128,7 @@ td{
   width: 80%;
   background-color: #B18D4C;
   padding: 1rem;
-  color: #ECFFF8;
+  color: #071013;
 }
 
 #navbar-active{
