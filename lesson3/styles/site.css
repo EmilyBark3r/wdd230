@@ -2,114 +2,116 @@
 
 
 body {
-    font-family: 'Sofia Sans', sans-serif;
-  }
+  font-family: 'Sofia Sans', sans-serif;
+}
 
-  header,footer,main {
-    max-width: 640px;
-    margin: 0 auto;
-    border: 3px solid #632C00;
-    padding: 1rem;
-    font-family: 'Roboto', sans-serif;
-  }
+header,footer,main {
+  max-width: 640px;
+  margin: 0 auto;
+  border: 3px solid #632C00;
+  padding: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
   
-  main {
-    background-color: #F2E797;
-  }
-
-  header, footer {
-    background-color: #632C00;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-  }
-
-  footer p {
-    color: #ECFFF8;
-  }
-
-  img {
-    width: calc(100% - 2px);
-    display: block;
-    margin: 0 auto;
-    max-width: 440px;
-  }
-
-  nav {
-    background-color: #B18D4C;
-    max-width: 640px;
-    margin: 0 auto;
-    padding: 1rem;
-    border: 3px solid #632C00;
-  }
-
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding-inline-start: 0px;
-  }
-
-  nav ul li {
-    border: 3px solid #B18D4C;
-    text-align: center;
-    min-width: 210px;
-    color:#ECFFF8;
-  }
-
-  nav ul li:hover {
-    background-color: #632C00;
-  }
-
-  nav a:hover {
-    color:#ECFFF8;
-  }
-
-  nav a {
-    display: block;
-    margin: 0.5rem;
-    text-decoration: none;
-    color: #071013;
-  }
-
-  header h1 {
-      text-align: center;
-      color: #ECFFF8;
-      font-size:xx-large;
-      font-family: 'Roboto', sans-serif;
-  }
-
-  main h2 {
-    color: #071013;
-    font-family: 'Roboto', sans-serif;
-  }
-
-  h3 {
-    color: #071013;
-    font-family: 'Roboto', sans-serif;
+main {
+  background-color: #F2E797;
 }
 
-  p {
-    color: #071013;
-    font-family: 'Sofia Sans', sans-serif;
+header, footer {
+  background-color: #632C00;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
 }
 
-  main h1 {
-    color: #071013;
+footer p {
+  color: #ECFFF8;
 }
-  main p {
-    color: #071013;
-  }
 
-  .active {
-    background-color: #632C00;
-  }
-  .active a {
-    color: #ECFFF8;
-  }
+img {
+  width: calc(100% - 2px);
+  display: block;
+  margin: 0 auto;
+  max-width: 440px;
+}
+
+nav {
+  background-color: #B18D4C;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 3px solid #632C00;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+nav ul li {
+  border: 3px solid #B18D4C;
+  text-align: center;
+  min-width: 210px;
+  color:#ECFFF8;
+}
+
+nav ul li:hover {
+  background-color: #632C00;
+}
+
+nav a:hover {
+  color:#ECFFF8;
+}
+
+nav a {
+  display: block;
+  margin: 0.5rem;
+  text-decoration: none;
+  color: #071013;
+}
+
+header h1 {
+  text-align: center;
+  color: #ECFFF8;
+  font-size:xx-large;
+  font-family: 'Roboto', sans-serif;
+}
+
+main h2 {
+  color: #071013;
+  font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+  color: #071013;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  color: #071013;
+  font-family: 'Sofia Sans', sans-serif;
+}
+
+main h1 {
+  color: #071013;
+}
+
+main p {
+  color: #071013;
+}
+
+.active {
+  background-color: #632C00;
+}
+.active a {
+  color: #ECFFF8;
+}
+
   /* design */
 
 table{
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 td{
@@ -141,8 +143,8 @@ td{
 
   /* Media Query Updates for middle widths */
   
-  @media screen and (min-width: 640px) {
-      nav ul {
-        flex-direction: row;
-      }
-    }  
+@media screen and (min-width: 640px) {
+  nav ul {
+    flex-direction: row;
+  }
+}  
