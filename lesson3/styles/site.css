@@ -70,11 +70,23 @@ body {
       text-align: center;
       color: #ECFFF8;
       font-size:xx-large;
+      font-family: 'Roboto', sans-serif;
   }
 
   h2 {
     color: #ECFFF8;
+    font-family: 'Roboto', sans-serif;
   }
+
+  h3 {
+    color: #071013;
+    font-family: 'Roboto', sans-serif;
+}
+
+  p {
+    color: #071013;
+    font-family: 'Sofia Sans', sans-serif;
+}
 
   main h1 {
     color: #071013;
@@ -86,7 +98,42 @@ body {
   .active {
     background-color: #632C00;
   }
-  
+  .active a {
+    color: #ECFFF8;
+  }
+  /* design */
+
+table{
+    border-collapse: collapse;
+}
+
+td{
+  border: 1px solid black;  
+  padding: 1rem;
+}
+
+#siteheader{
+  width: 80%;
+  background-color: #632C00;
+  padding: 1rem;
+  color: #ECFFF8;
+}
+
+#navbar{
+  width: 80%;
+  background-color: #B18D4C;
+  padding: 1rem;
+  color: #ECFFF8;
+}
+
+#navbar-active{
+  width: 80%;
+  background-color: #632C00;
+  color: #ECFFF8;
+  padding: 1rem;
+}
+
+
   /* Media Query Updates for middle widths */
   
   @media screen and (min-width: 640px) {
