@@ -7,7 +7,8 @@
     <meta name="description" content="wdd230 website planning document for Emily Barker">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <title>Website Planning Document</title>
-    <link rel="stylesheet" href="./styles/site.css"> 
+    <link rel="stylesheet" href="./styles/site.css">
+    <scripts src="./scripts/lesson3.js" defer></scripts> 
 </head>
 <body>
     <header>        
@@ -15,7 +16,11 @@
         <h1>Chamber of Commerce</h1>
     </header>
     <nav>
-        <ul>
+        <button id="hamburger-menu">
+            <span id="menu-close">&equiv;</span>
+            <span id="menu-open">X</span>
+        </button>
+        <ul id="navbar">
             <li><a href="index.html">Home Page</a></li>
             <li class="active"><a href="target-audience.html">Target Audience</a></li>
             <li><a href="design.html">Design</a></li>
@@ -47,5 +52,6 @@
         <p>&copy; <span id="currentyear"></span> | Emily Barker | Rexburg |</p>
     </footer>
 <script src="scripts/currentyear.js"></script>
+<script src="scripts/lesson3.js"></script>
 </body>
 </html>
