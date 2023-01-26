@@ -140,6 +140,33 @@ td{
   padding: 1rem;
 }
 
+/* Hamburger Menu */
+
+#navbar {
+  display: none;
+}
+
+#menu-open {
+  display: none;
+}
+
+#menu-close {
+  display: inline;
+}
+
+#navbar.menu-active {
+  display: flex;
+}
+
+#menu-open.menu-active {
+  display: inline;
+}
+
+#menu-close.menu-active {
+  display: none;
+}
+
+
 
   /* Media Query Updates for middle widths */
   

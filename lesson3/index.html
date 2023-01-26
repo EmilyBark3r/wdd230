@@ -7,6 +7,7 @@
     <meta name="description" content="wdd230 website planning document for Emily Barker">
     <title>Website Planning Document</title>
     <link rel="stylesheet" href="./styles/site.css"> 
+    <scripts src="./scripts/lesson3.js" defer></scripts>
 </head>
 <body>
     <header>        
@@ -14,7 +15,11 @@
         <h1>Chamber of Commerce</h1>
     </header>
     <nav>
-        <ul>
+        <button id="hamburger-menu">
+            <span id="menu-close">&equiv;</span>
+            <span id="menu-open">X</span>
+        </button>
+        <ul id="navbar">
             <li class="active"><a href="index.html">Home Page</a></li>
             <li><a href="target-audience.html">Target Audience</a></li>
             <li><a href="design.html">Design</a></li>
