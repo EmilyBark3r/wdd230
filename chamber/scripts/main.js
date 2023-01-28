@@ -5,7 +5,7 @@ document.querySelector('#lastModified').textContent = currentDate;
 // Year
 let date = new Date();
 let year = date.getFullYear();
-document.querySelector('#year').innerHTML = year;
+document.querySelector('#ear').innerHTML = year;
 
 // Today's Date
 const dateField = document.querySelector(".date");
@@ -15,6 +15,14 @@ dateField.innerHTML = fullDate;
 // Hamburger Menu
 let hamburger = document.querySelector('#hamburger');
 let nav = document.querySelector('header');
+
+
+
+//ham from lesson 3
+function toggleMenu() {
+    document.querySelector("#menu-close").classList.toggle('menu-active')
+    document.querySelector("#menu-open").classList.toggle('menu-active')
+}
 
 hamburger.addEventListener('click', () => {
     nav.classList.toggle('responsive');

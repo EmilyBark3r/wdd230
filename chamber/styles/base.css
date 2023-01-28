@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,900;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&family=Sofia+Sans:ital@1&display=swap');
 
 /* HEADER */
 header {
@@ -36,6 +35,7 @@ nav a:hover {
     color: #B18D4C;
 }
 
+/* Hamburger */
 #hamburger {
     color: #B18D4C;
     text-decoration: none;
@@ -45,14 +45,7 @@ nav a:hover {
     font-size: 3em;
 }
 
-.responsive  li{
-    display: block;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-right: 40px;
-}
-
+/* Socials */
 .socials img {
     width: 24px;
 }
@@ -75,126 +68,15 @@ nav a:hover {
 }
 
 /* MAIN */
-main {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-}
-
 main h1 {
     display: none;
-}
-
-#spotlights h2 {
-    display: none;
-}
-
-main section {
-    /* height: 400px; */
-    object-fit: cover;
-}
-
-main section div {
-    height: 200px;
-}
-
-main section,  main section div {
-    background-color: #F2E797;
-    margin: 10px;
-    text-align: center;
-    /* border: 2px solid #14213d; */
-}
-
-#hero, #spot1, #spot2, #spot3 {
-    display: inline-block;
-    overflow: hidden;
-}
-
-#hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#hero button {
-    background-color: #632C00;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    position: relative;
-    bottom: 200px;
-    z-index: 5;
-    width: 200px;
-    height: 50px;
-    font-size: 1.5em;
-    font-weight: 700;
-}
-
-#spotlights {
-    height: 100%;
-}
-
-#spot1 img, #spot2 img, #spot3 img {
-    /* filter: brightness(.5); */
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    /* position: relative; */
-}
-
-#spot1 h3, #spot2 h3, #spot3 h3 {
-    background-color: #B18D4C;
-    color: white;
-    z-index: 3;
-    position: relative;
-    top: 200px;
-    font-size: 2em;
-}
-
-#spotlights a {
-    text-decoration: none;
-}
-
-#spotlights h3:hover {
-    color: #B18D4C;
-}
-
-#spot1, #spot2, #spot3 {
-    width: 95%;
-    height: 400px;
-    /* margin: -20px; */
-}
-
-#news, #event, #join, #weather {
-    padding: 10px;
-}
-
-#news a:hover {
-    color: #B18D4C;
 }
 
 button:hover {
     background-color: #B18D4C;
 }
 
-#join button {
-    background-color: #B18D4C;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    position: relative;
-    /* bottom: 300px; */
-    z-index: 5;
-    width: 200px;
-    height: 50px;
-    font-size: 1.5em;
-    font-weight: 700;
-}
-
+/* Footer */
 footer {
     background-color: #632C00;
     text-align: center;
@@ -204,232 +86,8 @@ footer {
     flex-direction: column;
 }
 
-#copyright {
-    /* line-height: .5em; */
-    font-size: .7em;
-}
-
 footer a {
     text-decoration: none;
     color: white;
-}
-
-.discover {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    gap: 10px;
-}
-
-.discover div {
-    padding: 10px;
-}
-
-.join {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.membershipLevels {
-    margin: 10px;
-}
-
-.form h1 {
-    display: block;
-    text-align: center;
-}
-
-
-.form form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 50px auto;
-    color: white;
-}
-
-.form form input, .form textarea {
-    font-size: 1em;
-    width: 450px;
-    height: 30px;
-    padding: 10px;
-    margin: 10px auto;
-    border: 2px solid #632C00;
-    border-radius: 10px;
-    /* font-size: 1.5em; */
-    font-weight: 500;
-    background-color: #632C00;
-}
-
-.form textarea {
-    height: 250px;
-}
-
-.form form label {
-    /* font-size: 1.5em; */
-    font-weight: 700;
-    text-align: left;
-    margin: 5px;
-}
-
-label, textarea, select{
-    display: inline-block;
-    /* float: left; */
-    clear: left;
-    width: 450px;
-    text-align: left;
-}
-
-.form #submit {
-    background-color: #632C00;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    position: relative;
-    /* bottom: 300px; */
-    z-index: 5;
-    width: 200px;
-    height: 50px;
-    font-size: 1.5em;
-    font-weight: 700;
-    margin: 15px;
-}
-
-.form #submit:hover {
-    background-color: #632C00;
-}
-
-.thanks {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding: 50px;
-    text-align: center;
-}
-
-.thanks h1, .board h1 {
-    display: block;
-}
-
-.directory #content {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-}
-.cards section {
-    border: 2px solid #632C00;
-    background-color: #632C00;
-    padding: 30px;
-    text-align: center;
-    width: 300px;
-    margin: 20px;
-}
-
-.directory h2, h1 {
-    color: white;
-    text-align: center;
-}
-.directory .cards img {
-    width: 300px;
-    height: 180px;
-}
-
-.directory a {
-    text-decoration: none;
-    color: white;
-}
-
-.directory p:first-of-type {
-    font-style: italic;
-    font-size: 0.75em;
-}
-
-.directory .icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-}
-
-.icons button {
-    background-color: #B18D4C;
-    border: none;   
-}
-
-.icons button:hover {
-    background-color: #F2E797;
-    cursor: pointer;
-}
-
-.icons img {
-    width: 50px;
-}
-
-.directory table {
-    width: 90%;
-    border-collapse: collapse;
-    margin: auto;
-    overflow: hidden;
-}
-
-.directory td {
-
-    padding: 10px;
-}
-
-tr:nth-child(odd) {
-    background-color: #632C00;
-}
-
-tr td {
-    display: block;
-}
-
-#weather_top {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-
-#weather_top h2{
-    text-align: center;
-    font-size: 3em;
-}
-
-.board {
-    padding: 10px;
-}
-
-.board img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 10px;
-}
-
-.board {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
 }
 
