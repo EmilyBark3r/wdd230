@@ -1,35 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="wdd230 Chamber Home Page for Emily Barker">
 
-    <title>Chamber Home Page</title>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="wdd230 Chamber Home Page for Emily Barker">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script defer src="scripts/main.js"></script>
+    <title>Syringa Unite Home Page</title>
 </head>
 <body>
     <header>
-        <h1>Syringa Unite</h1>
-        <h2>Chamber of Commerce</h2>
-            <p><span id="date"></span></p>
+        <div id="logo">
+            <a href="index.html"><img src="./images/Syringa_Unite_Logo.png" alt="Syringa Unite Logo"></a>
+        </div>
+        <button id="hamburger">
+            <span id="menu-close">&equiv;</span>
+            <span id="menu-open">X</span>
+        </button>
         <nav>
-            <img src="./images/Syringa_Unite_Logo.png" alt="Syringa Unite Logo">
-            <h3>Discover</h3>
-            <h3>Directory</h3>
-            <h3>Join</h3>
-            <h3>Contact</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
-        <span id="date"></span>
+        <section class="socials">
+            <a href="#"><img src="./images/facebook_logo.png" alt="Facebook Logo"></a>
+            <a href="#"><img src="./images/instagram_logo.png" alt="Instagram Logo"></a>
+        </section>
     </header>
-        <main>
+    <section class="date"></section>
+    <main class="home">
+        <h1>Syringa Unite Chamber of Commerce</h1>
+        <!-- Main -->
+        <section id="hero">Hero with site name and call to action</section>
+        <section id="event">Event</section>
+        <section id="weather">Weather</section>
+        <section id="news">News Release</section>
+        <section id="join">Join</section>
+        <section id="spotlight1">Spotlight 1</section>
+        <section id="spotlight2">Spotlight 2</section>
+        <section id="spotlight3">Spotlight 3</section>
+    </main>
 
-        </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> Syringa Unite | Emily Barker | WDD 230 Project | <div>Last Updated: <span id="lastmodified"></span></div> </p>
+        <section id="about">
+            <img src="./images/Syringa_Unite_Logo.png" alt="Syringa Unite Logo">
+            <div id="address">
+                <p>247 E 4th N</p>
+                <p>St Anthony, ID 83445</p>
+                <a target="_blank" href="https://goo.gl/maps/ZXdUAmfWZPx3Y2kW8">Directions</a> 
+            </div>
+            <div id="contact">
+                <p>info@syringa.com</p>
+                <p>(571) 919-0314</p>
+            </div>
+        </section>
+            <p>&copy; <span id="year"></span> Syringa Unite | Emily Barker | WDD 230 Project | </p>
+                <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
-        <script src="scripts/currentyear.js"></script>
-        <script src="scripts/lastmodified.js"></script>
-        <script src="scripts/date.js"></script>
 </body>
 </html>
