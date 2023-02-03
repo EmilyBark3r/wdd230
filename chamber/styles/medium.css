@@ -52,7 +52,7 @@
     #news {
         grid-column: 2;
         grid-row: 4;
-        overflow: scroll;
+        /* overflow: scroll; */
     }
 
     #spotlights {

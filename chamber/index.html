@@ -6,66 +6,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="wdd230 Chamber Home Page for Emily Barker">
-    <!-- <link rel="icon" href="favicon.ico"> -->
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <script defer src="scripts/main.js"></script>
+    <script defer src="./scripts/header-footer.js"></script>
     <title>Syringa Unite Home Page</title>
 </head>
 <body>
     <header>
-        <div id="logo">
-            <a href="index.html"><img src="./images/Syringa_Unite_Logo.png" alt="Syringa Unite Logo"></a>
+        <div class="header-top">        
+            <div class="header-logo">
+              <a href="./index.html"><img src="./images/Syringa_Unite_Logo.png" /></a>            
+            </div>          
+            <div class="header-title">
+              <h1>Syringa Unite</h1>
+              <h2>Chamber of Commerce</h2>
+            </div>
+            <div class="header-icons">
+              <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram_logo.png" /></a>
+              <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook_logo.png" /></a>
+            </div>
         </div>
-        <button id="hamburger">
-            <span id="menu-close">&equiv;</span>
-            <span id="menu-open">X</span>
-        </button>
         <nav>
-            <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+          <button id="hamburger-menu">
+            <span id="hamburger-x">&equiv;</span>
+            <span id="hamburger-equiv">X</span>
+          </button>
+          <ul>
+            <li><a href="./index.html" class="active">Home</a></li>
+            <li><a href="./discover.html">Discover</a></li>
+            <li><a href="./directory.html">Directory</a></li>
+            <li><a href="./join.html">Join</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
         </nav>
-        <section class="socials">
-            <a href="#"><img src="./images/facebook_logo.png" alt="Facebook Logo"></a>
-            <a href="#"><img src="./images/instagram_logo.png" alt="Instagram Logo"></a>
-        </section>
-    </header>
-    <section class="date"></section>
+        <div class="date"><p></p></div>
+      </header>
     <main class="home">
-        <h1>Syringa Unite Chamber of Commerce</h1>
         <!-- Main -->
-        <section id="hero">Hero with site name and call to action</section>
-        <section id="event">Event</section>
-        <section id="weather">Weather</section>
-        <section id="news">News Release</section>
-        <section id="join">Join</section>
-        <section id="spotlight1">Spotlight 1</section>
-        <section id="spotlight2">Spotlight 2</section>
-        <section id="spotlight3">Spotlight 3</section>
-    </main>
-
-    <footer>
-        <section id="about">
-            <img src="./images/Syringa_Unite_Logo.png" alt="Syringa Unite Logo">
-            <div id="address">
-                <p>247 E 4th N</p>
-                <p>St Anthony, ID 83445</p>
-                <a target="_blank" href="https://goo.gl/maps/ZXdUAmfWZPx3Y2kW8">Location Map</a> 
-            </div>
-            <div id="contact">
-                <p>info@syringa.com</p>
-                <p>(571) 919-0314</p>
-            </div>
+        <section id="hero">
+            <h3>Hero Image with Call to Action</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.</p>  
         </section>
-            <p>&copy; <span id="year"></span> Syringa Unite | Emily Barker | WDD 230 Project | </p>
-                <p>Last Modified: <span id="lastModified"></span></p>
+        <section id="event">
+            <h3>A Current Event</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+              est laborum.</p>
+        </section>
+        <section id="weather">
+            <h3>Current Weather</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+              est laborum.</p>
+        </section>
+        <section id="news">
+            <h3>A News Release</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                est laborum.</p> 
+        </section>
+        <section id="join">
+            <h3>Join Now</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.</p> 
+        </section>
+        <section id="spotlight1">
+            <h4>Spotlight 1</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                  est laborum.</p>
+        </section>
+        <section id="spotlight2">
+            <h4>Spotlight 2</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                  est laborum.</p> 
+        </section>
+        <section id="spotlight3">
+            <h4>Spotlight 3</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                  est laborum.</p>
+        </section>
+    </main>
+    <footer>
+        <!-- test code -->
+            <div class="footer-content">
+              <div class="footer-logo">
+                <img src="./images/Syringa_Unite_Logo.png" />
+              </div>
+              <div class="footer-contact">
+                <h3>Syringa Unite Chamber of Commerce</h3>
+                <p>247 E 4th N<br />St Anthony, ID 83445</p>
+                <p>info@syringaunite.org</a></p>
+                <p>571-919-0314</p>
+              </div>
+              <div class="footer-map">
+                <p><img src="images/rsz_map-removebg-preview.png"></p>
+                <a href="https://goo.gl/maps/ZXdUAmfWZPx3Y2kW8" target="_blank">Location Map</a>
+              </div>
+            </div>
+            <hr />
+            <div class="footer-base">
+              <p>&copy; <span id="currentyear"></span> | Emily Barker | Rexburg, ID | Last Updated: <span id="lastmodified"></span></p>
+            </div>
     </footer>
+    <script defer src="scripts/main.js"></script>
+    <script defer src="./scripts/header-footer.js"></script>
 </body>
 </html>

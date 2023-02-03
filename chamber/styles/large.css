@@ -2,7 +2,7 @@
 @media screen and (min-width: 1200px) {
 
     body {
-        background-color: #14213d;
+        background-color: #632C00;
     }
 
     /* HEADER / NAV */
@@ -109,7 +109,7 @@
 
     #news a {
         text-decoration: none;
-        color: #3a3a3a;
+        color: white;
     }
 
     #spotlights {

@@ -141,7 +141,6 @@ td{
 }
 
 /* Hamburger Menu */
-
 #hamburger-menu {
   background-color: #B18D4C;
   font-size: 3rem;
@@ -171,7 +170,6 @@ td{
 #menu-close.menu-active {
   display: none;
 }
-
 
 
   /* Media Query Updates for middle widths */
