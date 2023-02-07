@@ -3,6 +3,10 @@
         margin-right: 100px;
     }
 
+    #hamburger-menu{
+        display:none;
+    }
+
     /* MAIN */
     .home {
         display: grid;

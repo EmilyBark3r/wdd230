@@ -136,11 +136,11 @@ footer a {
     margin: 0;
 }
 
-#hamburger-x{
+#hamburger-close{
     display: none;
 }
 
-#hamburger-equiv{
+#hamburger-open{
     display: inline;
 }
 
@@ -148,11 +148,11 @@ nav ul.menu-active{
     display: flex;
 }
 
-#hamburger-x.menu-active{
+#hamburger-close.menu-active{
     display: inline;
 }
 
-#hamburger-equiv.menu-active{
+#hamburger-open.menu-active{
     display: none;
 }
 

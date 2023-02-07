@@ -12,8 +12,8 @@ document.querySelector("#lastmodified").textContent = document.lastModified;
 // Toggle the menu open or closed
 function toggleMenu(){
     document.querySelector("nav ul").classList.toggle("menu-active");
-    document.querySelector("#hamburger-x").classList.toggle("menu-active");
-    document.querySelector("#hamburger-equiv").classList.toggle("menu-active");
+    document.querySelector("#hamburger-close").classList.toggle("menu-active");
+    document.querySelector("#hamburger-open").classList.toggle("menu-active");
 }
 
 // Attach click listener to the hamburger menu
