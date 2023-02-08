@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="wdd230 SVG and Webp Image Format Presentation by Emily Barker">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>SVG and webp image format</title>
+</head>
+<body>
+    <header>
+        <h1>SVG = Scalable Vector Graphics</h1>
+        <h2>html for 2d graphics</h2>
+        <p>SVG differs from raster images like .png and .jpg
+            that use a grid of tiny pixels to create an image.
+            When you zoom in on a raster image the pixels become larger
+            making the image look grainy.
+        </p>
+        <p>A vector image can be scaled to any size without losing its resolution.
+            This is because vector images use geometry.
+        </p>
+    </header>
+    <main>
+        <section>
+            <picture class="float">
+                <source media="(max-wdith: 400px)" srcset="./images" />
+                <source media="(max-width: 800px)" srcset="./images" />
+                <source media="" srcset="./images" />
+            </picture>
+        </section>
+        <svg viewbox="0 0 100 100">
+            <rect 
+                class="square"
+                x="10" y="23"
+                width="20" height="20"
+                fill="red"
+            ></rect>
+                <!-- line -->
+            <path class="line" d="M 10 20 1 15 3 1 20 10"></path>
+                <!-- Curve. C = Cubic Bezier, Q = Quadratic Bezier -->
+            <path class="curve" d="M 10 60 C 20 80 40 80 50 60"></path>
+                <!-- circle -->
+            <!-- <circle cx="30" cy="30" r="25">     -->
+        </svg>
+    </main>
+</body>
+</html>

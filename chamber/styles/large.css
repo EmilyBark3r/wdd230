@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Sawarabi+Gothic&display=swap');
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
 
     body {
         background-color: #632C00;
@@ -121,7 +121,7 @@
         height: auto
     }
 
-    #spot1 img, #spot2 img, #spot3 img {
+    #spot1 img, #spot2 img{
         width: 100%;
         height: 400px;
         overflow: hidden;
@@ -129,7 +129,7 @@
         bottom: 150px;
     }
 
-    #spot1 h3, #spot2 h3, #spot3 h3 {
+    #spot1 h3, #spot2 h3 {
         z-index: 3;
         position: relative;
         top: 125px;
@@ -142,20 +142,10 @@
         text-decoration: none;
     }
 
-    #spotlights h3:hover {
-        color: #fca311;
-    }
-
-    #spot1, #spot2, #spot3 {
+    #spot1, #spot2 {
         width: 95%;
         height: 400px;
         margin: 10px;
-    }
-
-
-    button:hover {
-        background-color: #fca311;
-        
     }
 
     /* FOOTER */
