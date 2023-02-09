@@ -7,7 +7,7 @@ body {
     grid-template-rows: .5fr .5fr .5fr;
     padding: 16px;
     background-color: #472836;
-    max-width: 600px;
+    max-width: 2000px;
 }
 img {
     padding: 15px;
@@ -17,6 +17,8 @@ header, h1, h2, h3, p {
     padding: 16px;
     color: white;
 }
+
+/* svg */
 .square {
     fill: #9AD2CB;
     stroke: #D7EBBA;
@@ -26,7 +28,7 @@ header, h1, h2, h3, p {
 }
 
 .square:hover {
-    transform: rotate(180deg);
+    transform: rotate(360deg);
     fill: #EBD494;
     stroke: #D7EBBA;
 }
@@ -39,6 +41,7 @@ header, h1, h2, h3, p {
 
 .line:hover {
     transform: scale(5);
+    /* transform: rotate(360deg); */
     fill: #EBD494;
     stroke: #D7EBBA;
 }

@@ -11,19 +11,17 @@
 <body>
     <header>
         <h1>SVG = Scalable Vector Graphics</h1>
-        <h2>html for 2d graphics</h2>
         <p>SVG differs from raster images like .png and .jpg
             that use a grid of tiny pixels to create an image.
             When you zoom in on a raster image the pixels become larger
-            making the image look grainy.
-        </p>
-        <p>A vector image can be scaled to any size without losing its resolution.
+            making the image look grainy. A vector image can be scaled to any size without losing its resolution.
             This is because vector images use geometry.
         </p>
     </header>
     <main>
         <section>
         </section>
+        <!-- SVG -->
         <svg viewbox="0 0 100 100">
             <rect 
                 class="square"
@@ -32,9 +30,22 @@
                 fill="red"
             ></rect>
                 <!-- line -->
-            <path class="line" d="M 10 20 1 15 3 1 20 10"></path>
+            <!-- <path class="line" d="M 10 20 1 15 3 1 20 10"></path> -->
+
+                <!-- Triangle -->
+            <path class="line" d="M 10 30 10 30 3 1 20 10"></path>
+                <!-- <path class="line" d="M 10 30 10 30 3 10 20 10"></path> -->
+                <!-- <path class="line" d="M 10 30 10 30 3 3 30 30"></path> -->
+
                 <!-- Curve. C = Cubic Bezier, Q = Quadratic Bezier -->
             <path class="curve" d="M 10 60 C 20 80 40 80 50 60"></path>
+
+            <!-- cool curve -->
+            <!-- <path class="curve" d="M 10 60 C 20 40 40 80 50 60"></path> -->
+
+            <!-- reverse cool curve -->
+            <!-- <path class="curve" d="M 10 60 C 20 80 40 40 50 60"></path> -->
+            
                 <!-- circle -->
             <!-- <circle cx="30" cy="30" r="25">     -->
         </svg>
@@ -44,6 +55,7 @@
                 <source media="(max-width: 800px)" srcset="images/otter_600.webp" />
                     <img src="./images/otter_900.webp" alt="otter" />
           </picture>
+          <!-- webp -->
           <h2> WEBP images can compress much smaller than 
             JPG or PNG and will speed up loading times, but are not fully supported 
             by all browsers, so you need fallback images.</h2>
