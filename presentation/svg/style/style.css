@@ -19,7 +19,7 @@ header, h1, h2, h3, p {
 }
 
 /* svg */
-.square {
+/* .square {
     fill: #9AD2CB;
     stroke: #D7EBBA;
     grid-column: 2/2;
@@ -31,9 +31,9 @@ header, h1, h2, h3, p {
     transform: rotate(360deg);
     fill: #EBD494;
     stroke: #D7EBBA;
-}
+} */
 
-.line {
+/* .line {
     transition: transform 15s;
     fill: #9AD2CB;
     stroke: #D7EBBA;
@@ -41,12 +41,11 @@ header, h1, h2, h3, p {
 
 .line:hover {
     transform: scale(5);
-    /* transform: rotate(360deg); */
     fill: #EBD494;
     stroke: #D7EBBA;
-}
+} */
 
-.curve {
+/* .curve {
     transition: transform 25s;
     fill: #9AD2CB;
     stroke: #D7EBBA;
@@ -56,4 +55,4 @@ header, h1, h2, h3, p {
     transform: rotate(360deg);
     fill: #EBD494;
     stroke: #D7EBBA;
-}
+} */
