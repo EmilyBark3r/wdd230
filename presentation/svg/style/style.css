@@ -1,13 +1,18 @@
+
 /* index.html */
 
-/* body {
+body {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 5fr 3fr;
     grid-template-rows: .5fr .5fr .5fr;
     padding: 16px;
     background-color: #472836;
+    max-width: 600px;
 }
-header {
+img {
+    padding: 15px;
+}
+header, h1, h2, h3, p {
     display: inline;
     padding: 16px;
     color: white;
@@ -15,8 +20,8 @@ header {
 .square {
     fill: #9AD2CB;
     stroke: #D7EBBA;
-    grid-column: 2/3;
-    grid-row: 2/3;
+    grid-column: 2/2;
+    grid-row: 2/2;
     transition: transform 15s;
 }
 
@@ -48,51 +53,4 @@ header {
     transform: rotate(360deg);
     fill: #EBD494;
     stroke: #D7EBBA;
-} */
-
-
-
-
-/* Curves.html */
-
-.curve {
-    position: absolute;
-    height: 225px;
-    width: 100%;
-    bottom: 0;
-}
-
-.curve::before {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    background-color: rgb(60, 49, 49);
-    transform: translate(85%, 60%);
-}
-
-.curve::after {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    background-color: blue;
-/* (x,y) */
-    transform: translate(-4%, 40%);
-}
-
-.bubble::after {
-    content: '';
-    border-top-left-radius: 50% 100%;
-    border-top-right-radius: 50% 100%;
-    position: absolute;
-    bottom: 0;
-    height: 50%;
-    width: 100%;
-    background-color: rgb(60, 49, 49);
-    z-index: -1;
 }

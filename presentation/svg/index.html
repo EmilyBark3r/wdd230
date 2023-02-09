@@ -23,11 +23,6 @@
     </header>
     <main>
         <section>
-            <picture class="float">
-                <source media="(max-wdith: 400px)" srcset="./images" />
-                <source media="(max-width: 800px)" srcset="./images" />
-                <source media="" srcset="./images" />
-            </picture>
         </section>
         <svg viewbox="0 0 100 100">
             <rect 
@@ -43,6 +38,20 @@
                 <!-- circle -->
             <!-- <circle cx="30" cy="30" r="25">     -->
         </svg>
+        <h1>Webp image format</h1>
+            <picture class="float-right">
+                <source media="(max-width: 300px)" srcset="images/otter_300.webp" />
+                <source media="(max-width: 800px)" srcset="images/otter_600.webp" />
+                    <img src="./images/otter_900.webp" alt="otter" />
+          </picture>
+          <h2> WEBP images can compress much smaller than 
+            JPG or PNG and will speed up loading times, but are not fully supported 
+            by all browsers, so you need fallback images.</h2>
+            <picture class="float-left">
+                <source media="(max-width: 300px)" srcset="images/file details_300.webp" />
+                <source media="(max-width: 800px)" srcset="images/file details_300.webp" />
+                    <img src="./images/file details.png" alt="file details" />
+          </picture>
     </main>
 </body>
 </html>
