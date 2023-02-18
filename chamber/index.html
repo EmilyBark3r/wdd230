@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="wdd230 Chamber Home Page for Emily Barker">
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <script defer src="scripts/main.js"></script>
-    <script defer src="./scripts/header-footer.js"></script>
+    <script defer src="scripts/header-footer.js"></script>
+    <script defer src="scripts/windchill.js"></script>
     <title>Syringa Unite Home Page</title>
 </head>
 <body>
@@ -32,35 +32,32 @@
         </div>
         <nav>
           <button id="hamburger-menu">
-            <span id="hamburger-open">&equiv;</span>
-            <span id="hamburger-close">X</span>
+            <span id="hamburger-equiv">&equiv;</span>
+            <span id="hamburger-x">X</span>
           </button>
           <ul>
-            <li><a href="./index.html" class="active">Home</a></li>
-            <li><a href="./discover.html">Discover</a></li>
-            <li><a href="./directory.html">Directory</a></li>
-            <li><a href="./join.html">Join</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
         <div class="date"><p></p></div>
       </header>
     <main class="home">
         <!-- Main -->
+            <!-- Hero -->
         <section id="hero">
             <h3>Hero Image with Call to Action</h3>
               <picture class="float-right">
                 <source media="(max-width: 400px)" srcset="/images/wdd230-org_300px.webp" />
                 <source media="(max-width: 800px)" srcset="/images/wdd230-org_600px.webp" />
-                  <img src="./images/wdd230-org_900px.webP" alt="Hero Image" />
+                  <img src="./images/wdd230-org_900px.webP" alt="Buisness Meeting" />
               </picture>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.</p>  
+              <div class="picbutton">
+                <button>Join the Chamber</button>
+            </div>
         </section>
         <section id="event">
             <h3>A Current Event</h3>
@@ -72,15 +69,14 @@
               cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
               est laborum.</p>
         </section>
+          <!-- UPDATE weather-->
         <section id="weather">
-            <h3>Current Weather</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-              est laborum.</p>
+            <h2>Current Weather</h2>
+                <div>
+                  <img id='weathericon' src="./images/weathericon.svg">
+                  <h3>Wind Speed: </h3>
+                  <h3>Wind Chill: </h3>
+                </div>
         </section>
         <section id="news">
             <h3>A News Release</h3>
@@ -159,3 +155,4 @@
     <script defer src="./scripts/header-footer.js"></script>
 </body>
 </html>
+

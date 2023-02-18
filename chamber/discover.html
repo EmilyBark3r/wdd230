@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover</title>
+    <meta name="description" content="wdd230 Chamber Home Page for Emily Barker">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/header-footer.js"></script>
+    <script defer src="scripts/windchill.js"></script>
+    <title>Syringa Unite Home Page</title>
 </head>
 <body>
-    
+    <header>
+        <div class="header-top">        
+            <div class="header-logo">
+              <a href="./index.html"><img src="./images/Syringa_Unite_Logo.png" alt="Syringa Unite Logo"/></a>            
+            </div>          
+            <div class="header-title">
+              <h1>Syringa Unite</h1>
+              <h2>Chamber of Commerce</h2>
+            </div>
+            <div class="header-icons">
+              <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram_logo.png" alt="instagram"/></a>
+              <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook_logo.png" alt="facebook"/></a>
+            </div>
+        </div>
+        <nav>
+          <button id="hamburger-menu">
+            <span id="hamburger-equiv">&equiv;</span>
+            <span id="hamburger-x">X</span>
+          </button>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="date"><p></p></div>
+      </header>
+
+    <main>
+       
+    </main>
+    <footer>
+            <div class="footer-content">
+              <div class="footer-logo">
+                <img src="./images/Syringa_Unite_Logo.png" alt="Syringa Unite Logo"/>
+              </div>
+              <div class="footer-contact">
+                <h3>Syringa Unite Chamber of Commerce</h3>
+                <p>247 E 4th N<br />St Anthony, ID 83445</p>
+                <p>info@syringaunite.org</a></p>
+                <p>571-919-0314</p>
+              </div>
+              <div class="footer-map">
+                <p><img src="images/rsz_map-removebg-preview.png" alt="map"></p>
+                <a href="https://goo.gl/maps/ZXdUAmfWZPx3Y2kW8" target="_blank">Location Map</a>
+              </div>
+            </div>
+            <hr />
+            <div class="footer-base">
+              <p>&copy; <span id="currentyear"></span> | Emily Barker | Rexburg, ID | Last Updated: <span id="lastmodified"></span></p>
+            </div>
+    </footer>
+    <script defer src="scripts/main.js"></script>
+    <script defer src="./scripts/header-footer.js"></script>
 </body>
+
 </html>

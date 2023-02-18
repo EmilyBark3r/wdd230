@@ -1,105 +1,59 @@
-@media screen and (min-width: 600px) {
+@media (min-width: 600px){
 
-    #hamburger {
-        margin-right: 100px;
+    .main-join{
+        display: block;
+    }    
+
+    .main-spotlight{
+        display: flex;
+    }
+
+    .home-main{ 
+        display: grid;
+        grid-template-areas:    "a a a"
+                                "b b b"
+                                "c c c"
+                                "d d d"
+                                "e e f";
+    } 
+    #weather{
+        grid-area: f;
+    }
+
+    #hero{
+        grid-area: a;
+    }
+
+    .news{
+        grid-area: b;
+    }
+
+    .spotlight{
+        grid-area: c;
+        display: flex;
+    }
+
+    .join{
+        display: block;
+        grid-area: d;
+    }
+
+    .event{
+        grid-area: e;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
     }
 
     #hamburger-menu{
-        display:none;
+        display: none;
     }
 
-    /* MAIN */
-    .home {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: auto;
-    }
-    
-    main section, main section div {
-        background-color: #B18D4C;
-        margin: 10px;
-        text-align: center;
-        height: 280px;
-    }
-
-    nav a {
-        text-align: center;
-    }
-
-    #event {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    #hero {
-        grid-column: 1/3;
-        grid-row: 1;
-        /* height: 100%; */
-        height: 500px;
-    }
-
-    #weather {
-        grid-column: 1;
-        grid-row: 4;
-        /* overflow: scroll; */
-    }
-
-    #weather_top {
-        margin-bottom: -150px;
-        margin-top: -25px;
-    }
-
-    #join {
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    #news {
-        grid-column: 2;
-        grid-row: 4;
-        /* overflow: scroll; */
-    }
-
-    #spotlights {
-        grid-column: 1/3;
-        grid-row: 3;
+    .hide{
         display: flex;
-        flex-direction: row;
-        height: 300px;
     }
 
 
-    /* FOOTER */
-
-    #about {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    #about img {
-        grid-column: 2;
-        width: 250px;
-        margin: auto;
-    }
-
-    #address {
-        grid-column: 1;
-        grid-row: 1;
-        line-height: .5em;
-    }
-
-    #contact {
-        grid-column: 3;
-        grid-row: 1;
-    }
-
-    #copyright-large {
-        display: block;
-    }
-
-    .discover div:hover{
-        -moz-box-shadow: 0 0 10px #ccc;
-        -webkit-box-shadow: 0 0 10px #ccc;
-        box-shadow: 0 0 10px #ccc;
-      }
 }
