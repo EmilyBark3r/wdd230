@@ -232,3 +232,68 @@ nav ul.menu-active{
 #hamburger-equiv.menu-active{
     display: none;
 }
+
+/* LAZY LOADING FOR DISCOVER IMAGES */
+main {
+    justify-items: center;
+    align-items: center;
+    grid-gap: 20px;
+}
+picture img {
+    /*  The width and height are specified
+        because the different widths and
+        heights that are specified in the
+        image placeholder url allows each
+        image to be different, so I just
+        slightly adjusted the width and
+        height to give it a variety */
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 2px 2px 4px #2f2f2f;
+}
+picture img.in {
+    animation: img-come-in 3s;
+}
+
+
+
+@keyframes img-come-in {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/* DISCOVER */
+#FirstImage, #SecondImage, #ThirdImage,
+#FourthImage, #FifthImage {
+    padding-top: 25px;
+}
+
+.one, .two, .three, .four, .fifth {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #632C00;
+}
+
+.one:hover, .two:hover, .three:hover,
+.four:hover, .fifth:hover {
+    opacity: .8;
+    /* transition: transform 8s;
+    transform: rotate(360deg); */
+    box-shadow: 5px 5px 10px #632C00;
+}
+
+.first-text, .second-text, .third-text,
+.fourth-text, .fifth-text {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
