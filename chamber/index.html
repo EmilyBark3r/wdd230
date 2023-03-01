@@ -51,8 +51,8 @@
         <section id="hero">
             <h3>Hero Image with Call to Action</h3>
               <picture class="float-right">
-                <source media="(max-width: 400px)" srcset="/images/wdd230-org_300px.webp" />
-                <source media="(max-width: 800px)" srcset="/images/wdd230-org_600px.webp" />
+                <source media="(max-width: 700px)" srcset="/images/wdd230-org_300px.webp" />
+                <source media="(max-width: 1000px)" srcset="/images/wdd230-org_600px.webp" />
                   <img src="./images/wdd230-org_900px.webP" alt="Buisness Meeting" />
               </picture>
               <div class="picbutton">
@@ -70,14 +70,17 @@
               est laborum.</p>
         </section>
           <!-- UPDATE weather-->
-        <section id="weather">
-            <h2>Current Weather</h2>
-                <div>
-                  <img id='weathericon' src="./images/weathericon.svg">
-                  <h3>Wind Speed: </h3>
-                  <h3>Wind Chill: </h3>
-                </div>
-        </section>
+          <section id="weather">
+            <h2>Weather</h2>
+            <div>
+                <img id="weathericon" src="./images/weathericon.svg">
+                <h2><span id="temperature">?</span>&deg; F</h2>
+            </div>
+            <h2 id="weatherdesc">Clear</h2>
+            <hr>
+            <h3>Wind Speed: <span id="windspeed">?</span> mph</h3>
+            <h3>Wind Chill: <span id="windchill">?</span></h3>
+        </section>    
         <section id="news">
             <h3>A News Release</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
