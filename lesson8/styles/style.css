@@ -1,0 +1,32 @@
+table{
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+thead tr{
+    background-color: purple;
+}
+thead tr:nth-child(2) th:nth-child(1){
+    background-color: purple;
+    border-top: 1px purple solid;
+}
+thead tr:nth-child(2) th{
+    background-color: red;
+}
+tr{
+    /* border: 1px black solid; */
+    background-color: green;
+    color: white;
+    
+}
+tbody tr:nth-child(even){
+    background-color: blue;
+}
+td, th{
+    border: 1px grey solid;
+    padding: 1rem;
+    text-align: center;
+}
+caption{            
+    padding: 1rem;
+    caption-side: bottom;
+}
