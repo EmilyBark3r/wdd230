@@ -7,155 +7,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="wdd230 Chamber Home Page for Emily Barker">
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
-    <script defer src="scripts/main.js"></script>
-    <script defer src="scripts/header-footer.js"></script>
-    <script defer src="scripts/windchill.js"></script>
+
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/large.css" />  
+
+    <script src="./scripts/header-footer.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+
     <title>Syringa Unite Home Page</title>
 </head>
 <body>
     <header>
-        <div class="header-top">        
-            <div class="header-logo">
-              <a href="./index.html"><img src="./images/Syringa_Unite_Logo.png" alt="Syringa Unite Logo"/></a>            
-            </div>          
-            <div class="header-title">
-              <h1>Syringa Unite</h1>
-              <h2>Chamber of Commerce</h2>
-            </div>
-            <div class="header-icons">
-              <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram_logo.png" alt="instagram"/></a>
-              <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook_logo.png" alt="facebook"/></a>
-            </div>
+      <div class="banner">
+        <div class="banner-content">
+            <div class="banner-text"><p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p></div>
+            <button type="button" class="banner-button"><img src="./images/X.png" alt="Close Button"></button>
         </div>
-        <nav>
-          <button id="hamburger-menu">
-            <span id="hamburger-equiv">&equiv;</span>
-            <span id="hamburger-x">X</span>
-          </button>
-          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="date"><p></p></div>
-      </header>
-    <main class="home">
-        <!-- Main -->
-            <!-- Hero -->
-        <section id="hero">
-            <h3>Hero Image with Call to Action</h3>
-              <picture class="float-right">
-                <source media="(max-width: 700px)" srcset="/images/wdd230-org_300px.webp" />
-                <source media="(max-width: 1000px)" srcset="/images/wdd230-org_600px.webp" />
-                  <img src="./images/wdd230-org_900px.webP" alt="Buisness Meeting" />
-              </picture>
-              <div class="picbutton">
-                <button>Join the Chamber</button>
-            </div>
-        </section>
-        <section id="event">
-            <h3>A Current Event</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-              est laborum.</p>
-        </section>
-          <!-- UPDATE weather-->
-          <section id="weather">
-            <h2>Weather</h2>
-            <div>
-                <img id="weathericon" src="./images/weathericon.svg">
-                <h2><span id="temperature">?</span>&deg; F</h2>
-            </div>
-            <h2 id="weatherdesc">Clear</h2>
-            <hr>
-            <h3>Wind Speed: <span id="windspeed">?</span> mph</h3>
-            <h3>Wind Chill: <span id="windchill">?</span></h3>
-        </section>    
-        <section id="news">
-            <h3>A News Release</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.</p> 
-        </section>
-        <section id="join">
-            <h3>Join Now</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.</p> 
-        </section>
-        <section id="spotlight1">
-            <h3>Spotlight 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                  est laborum.</p>
-        </section>
-        <section id="spotlight2">
-            <h3>Spotlight 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                  est laborum.</p> 
-        </section>
-        <section id="spotlight3">
-            <h4>Spotlight 3</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                  est laborum.</p>
-        </section>
+    </div>
+      <div class="header-top">        
+          <div class="header-logo">
+            <a href="index.html"><img src="./images/Syringa_Unite_Logo.png" /></a>            
+          </div>          
+          <div class="header-title">
+            <h1>Teton Idaho</h1>
+            <h2>Chamber of Commerce</h2>
+          </div>
+          <div class="header-icons">
+            <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram_logo.png" /></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook_logo.png" /></a>
+          </div>
+      </div>
+      <nav>
+        <button id="hamburger-menu">
+          <span id="hamburger-x"><img src="./images/hamburger-close.png"></span>
+          <span id="hamburger-equiv"><img src="./images/hamburger.png"></span>
+        </button>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-today"><p></p></div>
+    </header>
+    <main class="home-main">
+      <section id="nopad" class="main-hero">
+        <h3>paragraph.</h3>
+        <button><a href="join.html">Join Us!</a></button>
+      </section>
+      <section class="main-event">
+        <h3>Haunted Mill Closed for Season</h3>
+        <p class="centered-image"><img src="./images/haunted-mill.png"></p>
+        <p>paragraph.</p>
+        <p>paragraph.</p>
+      </section>
+      <section class="main-weather">
+        <h2>Weather</h2>
+        <div>
+          <figure>
+            <img src="" alt="" id="weather-icon" />
+          <figcaption></figcaption>
+            <h2><span id="temperature">?</span>&deg; F</h2>
+        </div>
+        <h2 id="weatherdesc">Clear</h2>
+        <hr>
+        <h3>Wind Speed: <span id="windspeed">?</span> mph</h3>
+        <h3>Wind Chill: <span id="windchill">?</span>&deg; F</h3>
+    </section>  
+      <section class="main-news">
+        <h3>Race to the Moon at Teton Elementary</h3>
+        <p class="centered-image"><img src="./images/teton-elementary-ice-320.jpg"></p>
+        <p>paragraph.</p>
+        <p>paragraph.</p>          
+        <p>paragraph.</p>          
+        <p>paragraph.</p>    
+        <p>paragraph.</p>
+        <p>paragraph.</p>
+      </section>      
+      <section class="main-spotlight">
+        <div class="spotlight1">
+          <h4>Teton Post Office</h3>
+          <p class="centered-image"><img src="./images/post-office-320.jpg"></p>
+          <p>paragraph.</p>      
+          <p>paragraph.</p>
+        </div>  
+        <div class="spotlight2">
+          <h4>Teton Turf and Tree</h3>
+          <p class="centered-image"><img src="./images/teton-turf.jpg"></p>  
+          <p>paragraph.</p>
+          <p>paragraph.</p>      
+        </div>  
+        <div class="spotlight3">
+          <h4>Grand Teton Ancient Grains</h3>
+          <p class="centered-image"><img src="./images/teton-ancient-grains-320.jpg"></p>  
+          <p>paragraph.</p>
+          <p>paragraph.</p>      
+        </div>  
+      </section>
+      <section class="main-join">
+        <h3>Join Us</h3>
+        <p>Join the Syringa Unite Chamber of Commerce.</p> 
+        <p><button><a href="join.html">JOIN US!</a></button></p>
+      </section>     
     </main>
     <footer>
-        <!-- test code -->
-            <div class="footer-content">
-              <div class="footer-logo">
-                <img src="./images/Syringa_Unite_Logo.png" alt="Syringa Unite Logo"/>
-              </div>
-              <div class="footer-contact">
-                <h3>Syringa Unite Chamber of Commerce</h3>
-                <p>247 E 4th N<br />St Anthony, ID 83445</p>
-                <p>info@syringaunite.org</a></p>
-                <p>571-919-0314</p>
-              </div>
-              <div class="footer-map">
-                <p><img src="images/rsz_map-removebg-preview.png" alt="map"></p>
-                <a href="https://goo.gl/maps/ZXdUAmfWZPx3Y2kW8" target="_blank">Location Map</a>
-              </div>
-            </div>
-            <hr />
-            <div class="footer-base">
-              <p>&copy; <span id="currentyear"></span> | Emily Barker | Rexburg, ID | Last Updated: <span id="lastmodified"></span></p>
-            </div>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./images/Syringa_Unite_Logo.png" />
+        </div>
+        <div class="footer-contact">
+          <h3>Syringa Unite Chamber of Commerce</h3>
+          <p>247 E 4th N<br/>St Anthony, ID 83445</p>
+          <p><a href="mailto:notavalidaddress@nowhere.email">info@syringaunitechamber.org</a></p>
+          <p>111-345-1345</p>
+        </div>
+        <div class="footer-map">
+          <p><img src="./images/rsz_map-removebg-preview.png"></p>
+          <a href="https://goo.gl/maps/6RZ9B64yaZsbyJNG9" target="_blank">Location Map</a>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-base">
+        <p>&copy; <span id="currentyear"></span> | Emily Barker | Rexburg, ID | Last Updated: <span id="lastmodified"></span></p>
+      </div>
     </footer>
-    <script defer src="scripts/main.js"></script>
-    <script defer src="./scripts/header-footer.js"></script>
-</body>
+  </body>
 </html>
-

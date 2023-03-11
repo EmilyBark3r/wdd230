@@ -1,22 +1,38 @@
-// // f = 35.74 + 0.6215t - 35.75s^0.16 + 0..4275ts^0.16
+// select HTML elements in the document
+const temperature = document.querySelector('#temperature');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
 
-function setWindChill(windspeed, temp){        
-    // Get the DOM objects that are dynamic
-    tempSpan = document.querySelector("#temperature");
-    windSpeedSpan = document.querySelector("#windspeed");
-    windChillSpan = document.querySelector("#windchill");
+const apikey = 'be32833d7239c63fb1ec02ebf74bf9fc';
+const lat = '64.8401';
+const lon = '-147.72';
 
-    // Set up the wind chill content
-    let windchill = 'N/A';
-    if (windspeed >= 3.0 && temp <= 50){
-        let chill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(windspeed,0.16)) + (0.4275*temp*Math.pow(windspeed,0.16)));
-        windchill = `${chill}`;
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apikey}&units=imperial`;
+
+function displayResults(weatherData) {
+  temperature.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+
+    const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@4x.png`
+    const desc = weatherData.weather[0].main;
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc);
+    captionDesc.textContent = desc;  
+
+  }
+
+async function apiFetch() {
+    try {
+      const response = await fetch(url);
+      if (response.ok) {
+        const data = await response.json();
+        // console.log(data); // this is for testing the call
+        displayResults(data);
+      } else {
+          throw Error(await response.text());
+      }
+    } catch (error) {
+        console.log(error);
     }
-
-    // Write out the dynamic content
-    tempSpan.textContent = temp;
-    windSpeedSpan.textContent = windspeed;
-    windChillSpan.innerHTML = windchill;
-}
-
-setWindChill(7, 5);
+  }
+  
+  apiFetch();
