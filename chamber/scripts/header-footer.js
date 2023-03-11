@@ -1,6 +1,6 @@
 // This sets today's date in the header
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format( new Date() );
-document.querySelector(".date p").textContent = fulldate;
+document.querySelector(".header-today p").textContent = fulldate;
 
 // This sets the year for the footer
 const today = new Date();

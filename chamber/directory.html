@@ -6,27 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="For WDD 230 Assignemt Portal">
     <!--Meta description is for search engines-->
-    <title>Directory</title>
+    <title>Syringa Unite Directory Page</title>
 
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/site.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/small.css">
     
-    <script src="scripts/site.js"></script>
-    <script src="scripts/currentyear.js"></script>
-    <script src="scripts/lastmodified.js"></script>
+    <script src="scripts/directory.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/header-footer.js"></script>
 
     <!--defer = wait until site is completed-->
-    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Pacifico&family=Roboto&family=Rowdies&family=Rubik+Bubbles&display=swap" rel="stylesheet">
-    </head>
-    <body>
-    <div id="content">
-    <header>
-        <div><img src="images/Emily_Barker.JPG" alt="Girl in glasses outside wearing a dress, Emily Barker"></div>
-        <div><h1>Emily Barker</h1></div>
-    </header>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&family=Sofia+Sans:ital@1&display=swap" rel="stylesheet">
+</head>
 <body>
-    
-</body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="images/Syringa_Unite_Logo.png" alt="Syringa Unite Logo"></a>
+        </div>
+        <button id="hamburger-menu">
+            <span id="hamburger-x"><img src="./images/hamburger-close.png"></span>
+            <span id="hamburger-equiv"><img src="./images/hamburger.png"></span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="/chamber/discover.html">Discover</a></li>
+                <li><a href="/chamber/directory.html" class="active">Directory</a></li>
+                <li><a href="/chamber/join.html">Join</a></li>
+                <li><a href="/chamber/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="socials">
+                <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram_logo.png" alt="instagram"/></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook_logo.png" alt="facebook"/></a>
+        </section>
+        
+    </header>
+
+    <section class="date"></section>
+
+    <main class="directory-main">
+        <div id='directory-selector'>
+          <button id="directory-grid" class="active">GRID</button>
+          <button id="directory-list">LIST</button></div>
+        <div id='directory-data' class='directory-cards'>
+        </div>
+        </main>
+
+    <footer>
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="./images/Syringa_Unite_Logo.png" alt="Syringa Unite Logo"/>
+          </div>
+          <div class="footer-contact">
+            <h3>Syringa Unite Chamber of Commerce</h3>
+            <p>247 E 4th N<br />St Anthony, ID 83445</p>
+            <p>info@syringaunite.org</a></p>
+            <p>571-919-0314</p>
+          </div>
+          <div class="footer-map">
+            <p><img src="images/rsz_map-removebg-preview.png" alt="map"></p>
+            <a href="https://goo.gl/maps/ZXdUAmfWZPx3Y2kW8" target="_blank">Location Map</a>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-base">
+          <p>&copy; <span id="currentyear"></span> | Emily Barker | Rexburg, ID | Last Updated: <span id="lastmodified"></span></p>
+        </div>
+</footer>
+    </body>
 </html>
