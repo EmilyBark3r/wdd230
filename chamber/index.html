@@ -8,6 +8,7 @@
     <meta name="description" content="wdd230 Chamber Home Page for Emily Barker">
     <link rel="icon" href="favicon.ico">
 
+    <link rel="stylesheet" href="./styles/normalize.css"/>
     <link rel="stylesheet" href="./styles/base.css" />
     <link rel="stylesheet" href="./styles/medium.css" />
     <link rel="stylesheet" href="./styles/large.css" />  
@@ -18,41 +19,38 @@
     <title>Syringa Unite Home Page</title>
 </head>
 <body>
-    <header>
-      <div class="banner">
-        <div class="banner-content">
-            <div class="banner-text"><p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p></div>
-            <button type="button" class="banner-button"><img src="./images/X.png" alt="Close Button"></button>
+  <header>
+    <div id="meeting">
+        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+    </div>
+    <div class="topHeader">
+      <!-- Logo -->
+        <img id="logo" src="./images/Syringa_Unite_Logo.png" alt="logo">
+        <div id="title">
+            <h1>Syringa Unite</h1>
+            <h2>Chamber of Commerce</h2>
+        </div>
+        <div id="social-logos">
+              <a href="https://www.instagram.com" target="_blank">
+                <img src="./images/instagram_logo.png" alt="instagram"/></a>
+              <a href="https://www.facebook.com" target="_blank">
+                <img src="./images/facebook_logo.png" alt="facebook"/></a>
         </div>
     </div>
-      <div class="header-top">        
-          <div class="header-logo">
-            <a href="index.html"><img src="./images/Syringa_Unite_Logo.png" /></a>            
-          </div>          
-          <div class="header-title">
-            <h1>Teton Idaho</h1>
-            <h2>Chamber of Commerce</h2>
-          </div>
-          <div class="header-icons">
-            <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram_logo.png" /></a>
-            <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook_logo.png" /></a>
-          </div>
-      </div>
-      <nav>
-        <button id="hamburger-menu">
-          <span id="hamburger-x"><img src="./images/hamburger-close.png"></span>
-          <span id="hamburger-equiv"><img src="./images/hamburger.png"></span>
+    <nav>
+        <button id="hamburger-button">
+            <span id="hamburger-equiv"><img src="./images/hamburger.png" alt="Hamburger icon"></span>
         </button>
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="discover.html">Discover</a></li>
-          <li><a href="directory.html">Directory</a></li>
-          <li><a href="join.html">Join</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <ul id="navUl" class="hide">
+            <li><a class="active" href="./index.html">Home</a></li>
+            <li><a href="./discover.html">Discover</a></li>
+            <li><a href="./directory.html">Directory</a></li>
+            <li><a href="./join.html">Join</a></li>
+            <li><a href="./contact.html">Contact</a></li>
         </ul>
-      </nav>
-      <div class="header-today"><p></p></div>
-    </header>
+    </nav>
+    <div class="date"><p></p></div>
+</header>
     <main class="home-main">
       <section id="nopad" class="main-hero">
         <h3>paragraph.</h3>
