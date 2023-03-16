@@ -18,159 +18,94 @@
     <title>Syringa Unite Join Page</title>
 </head>
 <body>
-    <div class="banner">
-        <div class="banner-content">
-            <div class="banner-text"><p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p></div>
-            <button type="button" class="banner-button"><img src="./images/X.png" alt="Close Button"></button>
+    <header>
+        <div id="meeting">
+            <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
         </div>
-    </div>
-        <header>
-            <div class="header-top">        
-                <div class="header-logo">
-                    <a href="./index.html"><img src="./images/Syringa_Unite_Logo.png" alt="Syringa Unite Logo"/></a>            
-                </div>          
-                <div class="header-title">
-                    <h1>Syringa Unite</h1>
-                    <h2>Chamber of Commerce</h2>
-                </div>
-                    <div class="header-icons">
-                        <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram_logo.png" alt="instagram"/></a>
-                        <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook_logo.png" alt="facebook"/></a>
-                    </div>
+        <div class="topHeader">
+          <!-- Logo -->
+            <img id="logo" href="./index.html" src="./images/Syringa_Unite_Logo.png" alt="logo">
+            <div id="title">
+                <h1>Syringa Unite</h1>
+                <h2>Chamber of Commerce</h2>
             </div>
-            <nav>
-                <button id="hamburger-menu">
-                    <span id="hamburger-x"><img src="./images/hamburger-close.png"></span>
-                    <span id="hamburger-equiv"><img src="./images/hamburger.png"></span>
-                </button>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="discover.html">Discover</a></li>
-                    <li><a href="directory.html">Directory</a></li>
-                    <li><a href="join.html" class="active">Join</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-                <div class="date"><p></p></div>
-          </header>
-        <main class="join">
-            <div class="form">
-                <h1>Join Us</h1>
-                <form action="/WDD230/chamber/thanks.html" method="GET" autocomplete="on">
-                    <label for="fname">
-                        First Name
-                        <input type="text" id="fname" name="fname" required>
-                    </label>
-    
-                    <label for="lname">
-                        Last Name
-                        <input type="text" id="lname" name="lname" required>
-                    </label>
-    
-                    <label for="business">
-                        Business Name
-                        <input type="text" id="business" name="business" pattern="[- A-Z a-z 0-9]" required>
-                    </label>
-    
-                    <label for="title">
-                        Job Title
-                        <input type="text" id="title" name="title">
-                    </label>
-    
-                    <label for="email">
-                        Email
-                        <input type="email" placeholder="johndoe@example.com" id="email" name="email" required>
-                    </label>
-    
-                    <label for="phone">
-                        Phone
-                        <input type="tel" id="phone" name="phone" required>
-                    </label>
-    
-                    <label for="membership">
-                        Choose a membership level:
-                        <select id="membership" name="membership">
-                            <option selected disabled hidden>Make a Selection</option>
-                            <option value="NP">Nonprofit</option>
-                            <option value="bronze">Bronze</option>
-                            <option value="silver">Silver</option>
-                            <option value="gold">Gold</option>
-                        </select>
-                    </label>
-    
-                    <label for="desc">
-                        Business Description
-                        <textarea name="desc" id="desc"></textarea>
-                    </label>
-    
-                    <label for="dateTime" hidden>
-                        Datetime
-                        <input type="datetime-local" name="dateTime" id="dateTime" required hidden>
-                    </label>
-                    <input type="submit" id="submit" value="submit">
-                    
-                </form>
+            <div id="social-logos">
+                  <a href="https://www.instagram.com" target="_blank">
+                    <img src="./images/instagram_logo.png" alt="instagram"/></a>
+                  <a href="https://www.facebook.com" target="_blank">
+                    <img src="./images/facebook_logo.png" alt="facebook"/></a>
             </div>
-    
-            <div class="membershipLevels">
-    
-                <h1>Membership Levels</h1>
-    
-                <div class="nonprofit">
-                    <h2>Nonprofit</h2>
-                    <p class="fee">No fee</p>
-                    <p>
-                        Nonprofit membership is for businesses that are not for profit and are not
-                        self-employed.
-                    </p>
-                </div>
-    
-                <div class="bronze">
-                    <h2>Bronze</h2>
-                    <p class="fee">$50/month</p>
-                    <p>
-                        Bronze membership is for businesses with less than 50 employees that are for profit. Benefits
-                        include:
-                    </p>
+        </div>
+        <nav>
+            <button id="hamburger-button">
+                <span id="hamburger-equiv"><img src="./images/hamburger.png" alt="Hamburger icon"></span>
+            </button>
+            <ul id="navUl" class="hide">
+                <li><a href="./index.html">Home</a></li>
+                <li><a class="active" href="./discover.html">Discover</a></li>
+                <li><a href="./directory.html">Directory</a></li>
+                <li><a href="./join.html">Join</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="date"><p></p></div>
+      </header>
+          <main class="main-join">
+            <form method="get" action="thanks.html">
+                <fieldset class="first-fieldset">  
+                    <input class="hidden-field" type="hidden" name="date" value="" />
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Title <input type="text" name="title" pattern="^[a-zA-Z0-9\s]{7,}$"></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                    <label class="top">Business Name* <input type="text" name="businessName"></label>
+                    <label class="top">Business Description <input id="description" type="text" name="businessName"></label>
+      
+        
+                    <h3>Membership Level</h3>
+                    <!-- <div>Membership Level</div> -->
+                    <label class="sbs"><input type="radio" name="membershipLevel" value="non-profit"> Non-Profit</label>
+                    <label class="sbs"><input type="radio" name="membershipLevel" value="bronze"> Bronze</label>
+                    <label class="sbs"><input type="radio" name="membershipLevel" value="silver"> Silver</label>
+                    <label class="sbs"><input type="radio" name="membershipLevel" value="gold"> Gold</label>
+                    <input type="submit" value="Join the Chamber!" class="submitBtn">
+      
+                </fieldset>
+                  <fieldset class="second-fieldset">
+                    <h2>Member Levels Benefits</h2>
+                    <h3>NP Membership</h3>
                     <ul>
-                        <li>15% discount on events</li>
-                        <li>10% discount on advertising</li>
+                      <li>Option available exclusively to non-profit organizations</li>
+                      <li>No fee</li>
                     </ul>
-                </div>
-    
-                <div class="silver">
-                    <h2>Silver</h2>
-                    <p class="fee">$100/month</p>
-                    <p>
-                        Silver membership is for businesses with less than 250 employees that are for profit. Additional
-                        benefits include:
-                    </p>
+                    <h3>Bronze Membership</h3>
                     <ul>
-                        <li>50% discount on events</li>
-                        <li>50% discount on advertising</li>
-                        <li>Free participation in the trade fair</li>
+                      <li>1 annual consultation with our marketing experts</li>
+                      <li>10% off admission fee for chamber events</li>
+                      <li>Fee of $25/month</li>
                     </ul>
-                </div>
-    
-                <div class="gold">
-                    <h2>Gold</h2>
-                    <p class="fee">$250/month</p>
-                    <p>
-                        Gold membership is for businesses with more than 250 employees that are for profit. Additional
-                        benefits include:
-                    </p>
+                    <h3>Silver Membership</h3>
                     <ul>
-                        <li>50% discount on events</li>
-                        <li>50% discount on advertising</li>
-                        <li>Free participation in the trade fair</li>
-                        <li>5 featured ads per year</li>
-                        <li>1 free training per quarter</li>
+                      <li>4 annual consultations with our marketing experts</li>
+                      <li>15% off admission fee for chamber events</li>
+                      <li>Free participation in trade fair</li>
+                      <li>Fee of $35/month</li>
                     </ul>
-                </div>
-    
-    
-            </div>
-        </main>
+                    <h3>Gold Membership</h3>
+                    <ul>
+                      <li>6 annual consultations with our marketing experts</li>
+                      <li>25% off admission fee for chamber events</li>
+                      <li>Free participation in trade fair</li>
+                      <li>Access to the weekly Gold newsletter</li>
+                      <li>Fee of $50/month</li>
+                    </ul>
+                  </fieldset>
+          
+        
+            </form>
+        
+          </main>
         <footer>
                 <div class="footer-content">
                   <div class="footer-logo">
