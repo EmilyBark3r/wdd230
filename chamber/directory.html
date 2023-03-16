@@ -21,59 +21,64 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&family=Sofia+Sans:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div id="logo">
-            <a href="index.html"><img src="images/Syringa_Unite_Logo.png" alt="Syringa Unite Logo"></a>
+  <header>
+    <div id="meeting">
+        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+    </div>
+    <div class="topHeader">
+      <!-- Logo -->
+        <img id="logo" src="./images/Syringa_Unite_Logo.png" alt="logo">
+        <div id="title">
+            <h1>Syringa Unite</h1>
+            <h2>Chamber of Commerce</h2>
         </div>
-        <button id="hamburger-menu">
-            <span id="hamburger-x"><img src="./images/hamburger-close.png"></span>
-            <span id="hamburger-equiv"><img src="./images/hamburger.png"></span>
+        <div id="social-logos">
+              <a href="https://www.instagram.com" target="_blank">
+                <img src="./images/instagram_logo.png" alt="instagram"/></a>
+              <a href="https://www.facebook.com" target="_blank">
+                <img src="./images/facebook_logo.png" alt="facebook"/></a>
+        </div>
+    </div>
+    <nav>
+        <button id="hamburger-button">
+            <span id="hamburger-equiv"><img src="./images/hamburger.png" alt="Hamburger icon"></span>
         </button>
-        <nav>
-            <ul>
-                <li><a href="/chamber/discover.html">Discover</a></li>
-                <li><a href="/chamber/directory.html" class="active">Directory</a></li>
-                <li><a href="/chamber/join.html">Join</a></li>
-                <li><a href="/chamber/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <section class="socials">
-                <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram_logo.png" alt="instagram"/></a>
-                <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook_logo.png" alt="facebook"/></a>
-        </section>
-        
-    </header>
-
-    <section class="date"></section>
-
-    <main class="directory-main">
-        <div id='directory-selector'>
-          <button id="directory-grid" class="active">GRID</button>
-          <button id="directory-list">LIST</button></div>
-        <div id='directory-data' class='directory-cards'>
-        </div>
-        </main>
-
-    <footer>
-        <div class="footer-content">
-          <div class="footer-logo">
-            <img src="./images/Syringa_Unite_Logo.png" alt="Syringa Unite Logo"/>
-          </div>
-          <div class="footer-contact">
-            <h3>Syringa Unite Chamber of Commerce</h3>
-            <p>247 E 4th N<br />St Anthony, ID 83445</p>
-            <p>info@syringaunite.org</a></p>
-            <p>571-919-0314</p>
-          </div>
-          <div class="footer-map">
-            <p><img src="images/rsz_map-removebg-preview.png" alt="map"></p>
-            <a href="https://goo.gl/maps/ZXdUAmfWZPx3Y2kW8" target="_blank">Location Map</a>
-          </div>
-        </div>
-        <hr />
-        <div class="footer-base">
-          <p>&copy; <span id="currentyear"></span> | Emily Barker | Rexburg, ID | Last Updated: <span id="lastmodified"></span></p>
-        </div>
-</footer>
+        <ul id="navUl" class="hide">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./discover.html">Discover</a></li>
+            <li><a class="active" href="./directory.html">Directory</a></li>
+            <li><a href="./join.html">Join</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="date"><p></p></div>
+</header>
+<main class="main-directory">
+  <div class="buttons-div">
+    <button class="grid-button directory-active">GRID</button>
+    <button class="list-button">LIST</button>
+  </div>
+  <div id="directory-grid" class="directory-cards"></div>
+</main>
+<footer>
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="./images/Syringa_Unite_Logo.png" alt="Logo">
+      </div>
+      <div class="footer-contact">
+        <h3>Syringa Unite Chamber of Commerce</h3>
+        <p>247 E 4th N<br>St Anthony, ID 83445</p>
+        <p><a href="info@MountainCreekChamber.org">info@SyringaUnite.org</a></p>
+        <p>842-871-1964</p>
+      </div>
+      <div class="footer-map">
+        <p><img src="./images/rsz_map-removebg-preview.png" alt="google map"></p>
+        <a href="https://goo.gl/maps/ZXdUAmfWZPx3Y2kW8" target="_blank">Location Map</a>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>&copy; <span id="currentyear"></span> | Emily Barker | Rexburg, ID | Last Updated: <span id="lastmodified"></span></p>
+    </div>
+  </footer>
     </body>
 </html>

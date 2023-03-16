@@ -1,129 +1,82 @@
-@media screen and (min-width: 700px) {
-    #hamburger {
-        margin-right: 100px;
-    }
+@media screen and (min-width: 800px){
 
-    /* MAIN */
-    .home {
+    .main-index, .main-discover{ 
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        /* grid-template-rows: 300px 300px 300px; */
-        margin: auto;
-    }
-    
-    main section, main section div {
-        background-color: #B18D4C;
-        margin: 10px;
-        text-align: center;
-        /* border: 2px solid #14213d; */
-        height: 280px;
+        grid-template-areas: "a a a"
+                         "b b b"
+                         "c c c"
+                         "d d d"
+                         "e e f";
+    } 
+    .Weather{
+        grid-area: f;
     }
 
-    main section {
-        /* height: 400px; */
-        object-fit: cover;
-        overflow: hidden;
+    .Hero{
+        grid-area: a;
     }
 
-    nav a {
-        text-align: center;
+    .News{
+        grid-area: b;
     }
 
-    #event {
-        grid-column: 1;
-        grid-row: 2;
-        /* height: 428px; */
+    .Spotlight{
+        grid-area: c;
+        display: flex;
     }
 
-    #hero {
-        grid-column: 1/3;
-        grid-row: 1;
-        /* height: 100%; */
-        height: 500px;
+    .Join{
+        display: block;
+        grid-area: d;
     }
 
-    #weather {
-        grid-column: 1;
-        grid-row: 4;
-        /* overflow: scroll; */
+    .Event{
+        grid-area: e;
     }
 
-    #weather_top {
-        margin-bottom: -150px;
-        margin-top: -25px;
-    }
-
-    #join {
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    #news {
-        grid-column: 2;
-        grid-row: 4;
-        overflow: scroll;
-    }
-
-    #spotlights {
-        grid-column: 1/3;
-        grid-row: 3;
+    nav ul{
         display: flex;
         flex-direction: row;
-        height: 300px;
-        /* flex-wrap: wrap; */
     }
 
-    #spot1, #spot2, #spot3 {
-        width: 31%;
-        /* height: 90%; */
+    #hamburger-button{
+        display: none;
     }
 
-    #spot1 img, #spot2 img, #spot3 img {
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-        bottom: 125px;
-        /* position: relative; */
+    .hide{
+        display: flex;
     }
 
-    #spot1 h3, #spot2 h3, #spot3 h3 {
-        position: relative;
-        top: 75px;
-        font-size: 2em;
+    /* DISCOVERY PAGE */
+    .discovery img:hover{
+        border:5px solid #ccc;
     }
 
-    /* FOOTER */
+    /* JOIN PAGE */
+    .main-join{
+        display: flexbox;
+    }
 
-    #about {
+    form{
+        width: 85%;
+        margin: 0 auto;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "a b";
+        
+    }
+    form fieldset{
+        max-width: 100%;
     }
 
-    #about img {
-        grid-column: 2;
-        width: 250px;
-        margin: auto;
+    .first-fieldset{
+        display: inline-block;
     }
 
-    #address {
-        grid-column: 1;
-        grid-row: 1;
-        line-height: .5em;
+    .second-fieldset{
+        display: inline-block;
+        margin-top: 2rem;
+
     }
 
-    #contact {
-        grid-column: 3;
-        grid-row: 1;
-        /* line-height: .5em; */
-    }
-
-    #copyright-large {
-        display: block;
-    }
-
-    .discover div:hover{
-        -moz-box-shadow: 0 0 10px #ccc;
-        -webkit-box-shadow: 0 0 10px #ccc;
-        box-shadow: 0 0 10px #ccc;
-      }
 }
+
