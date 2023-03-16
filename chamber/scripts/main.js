@@ -1,28 +1,48 @@
-// Show the meet-greet message on Tue/Thu
-// Date.getDay() uses a 0 based index to return the day of the week
-var messagedate = new Date();
-if (messagedate.getDay() == 2 || messagedate.getDay() == 4) {
-  document.querySelector("#meet-greet").classList.add("active");
+// sets last modified date on the home page
+document.querySelector("#lastmodified").textContent = document.lastModified;
+
+function toggleMenu() {
+    document.querySelector("nav ul").classList.toggle("hide");
 }
 
-// Wind chill stuff
-function setWindChill(windSpeed, temperature) {
-  // Get the DOM objects that are dynamic
-  let temperatureSpan = document.querySelector("#temperature");
-  let windSpeedSpan = document.querySelector("#windspeed");
-  let windChillSpan = document.querySelector("#windchill");
+document.querySelector("#hamburger-button").addEventListener('click', toggleMenu);
 
-  // Set up the wind chill content
-  let windChillMessage = "N/A";
-  if (windSpeed >= 3.0 && temperature <= 50) {
-    let chill = Math.round(35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16));
-    windChillMessage = `${chill}`;
-  }
+// weather
+function setWindChill(windspeed, temp){        
+    tempSpan = document.querySelector("#temperature");
+    windSpeedSpan = document.querySelector("#windspeed");
+    windChillSpan = document.querySelector("#windchill");
 
-  // Write out the dynamic content
-  temperatureSpan.textContent = temperature;
-  windSpeedSpan.textContent = windSpeed;
-  windChillSpan.innerHTML = windChillMessage;
+    let windchill = 'N/A';
+    if (windspeed >= 3.0 && temp <= 50){
+        let chill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(windspeed,0.16)) + (0.4275*temp*Math.pow(windspeed,0.16)));
+        windchill = `${chill}`;
+    }
+
+    tempSpan.textContent = temp;
+    windSpeedSpan.textContent = windspeed;
+    windChillSpan.innerHTML = windchill;
 }
 
-setWindChill(5, 25);
+setWindChill(4, 33);
+
+// Days since last visit
+const MILLIS_PER_DAY = 24 * 60 * 60 * 1000;
+let lastVisitString = localStorage.getItem("lastVisit");
+let visitspan = document.querySelector('#days-since-visit');
+
+if (lastVisitString==null){        
+    visitspan.textContent = '0';
+}
+else{
+    lastVisitDate=new Date(lastVisitString);
+    daysSinceLastVisit = Math.floor((today.getTime() - lastVisitDate.getTime()) / MILLIS_PER_DAY);
+    visitspan.textContent = daysSinceLastVisit;
+}
+localStorage.setItem("lastVisit", today.toLocaleDateString());
+
+// Date page loaded for join page
+dateAccessed = new Date();
+
+hiddenField = document.querySelector(".hidden-field").value;
+hiddenField = dateAccessed;

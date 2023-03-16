@@ -1,20 +1,22 @@
-// This sets today's date in the header
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format( new Date() );
-document.querySelector(".header-today p").textContent = fulldate;
+// Day of the week
+const now = new Date();
+const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
+	now
+);
+document.querySelector(".date p").textContent = fulldate;
 
-// This sets the year for the footer
-const today = new Date();
-document.querySelector("#currentyear").textContent = today.getFullYear();
+// Meeting announcement to appear on Mondays and Tuesdays
+const d = new Date();
+let day = d.getDay();
 
-// This sets the last modified date on the home page
-document.querySelector("#lastmodified").textContent = document.lastModified;
+let meeting = document.querySelector("#meeting");
 
-// Toggle the menu open or closed
-function toggleMenu(){
-    document.querySelector("nav ul").classList.toggle("menu-active");
-    document.querySelector("#hamburger-x").classList.toggle("menu-active");
-    document.querySelector("#hamburger-equiv").classList.toggle("menu-active");
+if (day != 1 && day !=2){
+	meeting.style.display = "none";
 }
 
-// Attach click listener to the hamburger menu
-document.querySelector("#hamburger-menu").addEventListener('click', toggleMenu);
+else{
+	meeting.style.display = "block";
+}
+
+
