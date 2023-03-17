@@ -33,11 +33,11 @@ header, footer {
     align-items: center;
     justify-items: center;
     text-align: center;
+    color: white;
 }
 
 #logo{
     margin:15px;
-    border: 1px solid black;
 }
 
 #meeting p{
@@ -124,8 +124,9 @@ nav ul li{
 
 .welcometo{
     position: absolute;
-    top: 7%;
-    left: 5%; 
+    top: 6%;
+    left: 10%; 
+    color: black;
 }
 
 body{
@@ -215,6 +216,10 @@ body{
 
 .footer-contact{
     grid-column: 2/3;
+}
+
+.footer-contact p, .footer-contact h3 {
+    color: white;
 }
 
 .footer-map{
