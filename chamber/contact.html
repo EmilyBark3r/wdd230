@@ -43,14 +43,105 @@
         </button>
         <ul id="navUl" class="hide">
             <li><a href="./index.html">Home</a></li>
-            <li><a class="active" href="./discover.html">Discover</a></li>
+            <li><a href="./discover.html">Discover</a></li>
             <li><a href="./directory.html">Directory</a></li>
             <li><a href="./join.html">Join</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a class="active" href="./contact.html">Contact</a></li>
         </ul>
     </nav>
     <div class="date"><p></p></div>
 </header>
+<main class="contact">
+  <div class="form">
+      <h1>Contact Us</h1>
+      <form action="thanks.html" method="GET" autocomplete="on">
+          <label for="name">
+              Name
+              <input type="text" id="name" name="name" required>
+          </label>
+  
+          <label for="email">
+              Email
+              <input type="email" id="email" name="email" required>
+          </label>
+  
+          <label for="message">
+              Message
+              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          </label>
+  
+          
+          <input type="submit" id="submit" value="Submit">
+  
+      </form>
+  </div>
 
+  <div class="board">
+      <div>
+          <picture>
+              <img src="images/businessPeople.png" alt="President">
+          </picture>
+          <h2>Andrew</h2>
+          <p>President</p>
+      </div>
+      <div>
+          <picture>
+              <img src="images/businessPeople.png" alt="Vice President">
+          </picture>
+          <h2>Larry</h2>
+          <p>Vice President</p>
+      </div>
+      <div>
+          <picture>
+              <img src="images/businessPeople.png" alt="Treasurer">
+          </picture>
+          <h2>Enis</h2>
+          <p>Treasurer</p>
+      </div>
+      <div>
+          <picture>
+              <img src="images/businessPeopleFemale.png" alt="Business Outreach">
+          </picture>
+          <h2>Leyla</h2>
+          <p>Business Outreach</p>
+      </div>
+      <div>
+          <picture>
+              <img src="images/businessPeopleFemale.png" alt="Community Outreach">
+          </picture>
+          <h2>Neta</h2>
+          <p>Community Outreach</p>
+      </div>
+      <div>
+          <picture>
+              <img src="images/businessPeopleFemale.png" alt="Social Media Manager">
+          </picture>
+          <h2>Aurore</h2>
+          <p>Social Media Manager</p>
+      </div>
+  </div>
+</main>
+<footer>
+  <div class="footer-top">
+    <div class="footer-logo">
+      <img src="./images/Syringa_Unite_Logo.png" alt="Logo">
+    </div>
+    <div class="footer-contact">
+      <h3>Syringa Unite Chamber of Commerce</h3>
+      <p>247 E 4th N<br>St Anthony, ID 83445</p>
+      <p><a href="info@MountainCreekChamber.org">info@SyringaUnite.org</a></p>
+      <p>842-871-1964</p>
+    </div>
+    <div class="footer-map">
+      <p><img src="./images/rsz_map-removebg-preview.png" alt="google map"></p>
+      <a href="https://goo.gl/maps/ZXdUAmfWZPx3Y2kW8" target="_blank">Location Map</a>
+    </div>
+  </div>
+  <div class="footer-base">
+    <p>&copy; <span id="currentyear"></span> | Emily Barker | Rexburg, ID | Last Updated: <span id="lastmodified"></span></p>
+  </div>
+</footer>
+    <script defer src="scripts/main.js"></script>
+    <script defer src="./scripts/header-footer.js"></script>
 </body>
 </html>
