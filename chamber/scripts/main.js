@@ -1,48 +1,64 @@
-// sets last modified date on the home page
-document.querySelector("#lastmodified").textContent = document.lastModified;
+// Last Modified
+let currentDate = document.lastModified;
+document.querySelector('#lastModified').textContent = currentDate;
 
-function toggleMenu() {
-    document.querySelector("nav ul").classList.toggle("hide");
+// Copyright Date
+let date = new Date();
+let year = date.getFullYear();
+document.querySelector('#copyrightYear').innerHTML = year;
+
+// Today's Date
+const dateField = document.querySelector(".date");
+const fullDate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(date);
+dateField.innerHTML = fullDate;
+
+// Hamburger Menu
+
+let hamburger = document.querySelector('#hamburger');
+let nav = document.querySelector('header');
+
+hamburger.addEventListener('click', () => {
+    nav.classList.toggle('responsive');
+
+});
+
+let day = date.getDay();
+
+if (day == 1 || day == 2) {
+    let banner = document.querySelector('.banner');
+    banner.style.display = 'block';
+
+    document.querySelector(".banner-button").addEventListener("click", function () {
+        banner.style.display = 'none';
+      });
+} else {
+    let banner = document.querySelector('.banner');
+    banner.style.display = 'none';
 }
 
-document.querySelector("#hamburger-button").addEventListener('click', toggleMenu);
+const images = document.querySelectorAll('img');
+const options = { threshold: 0.5, rootMargin: '0px 0px -100px 0px' };
 
-// weather
-function setWindChill(windspeed, temp){        
-    tempSpan = document.querySelector("#temperature");
-    windSpeedSpan = document.querySelector("#windspeed");
-    windChillSpan = document.querySelector("#windchill");
-
-    let windchill = 'N/A';
-    if (windspeed >= 3.0 && temp <= 50){
-        let chill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(windspeed,0.16)) + (0.4275*temp*Math.pow(windspeed,0.16)));
-        windchill = `${chill}`;
-    }
-
-    tempSpan.textContent = temp;
-    windSpeedSpan.textContent = windspeed;
-    windChillSpan.innerHTML = windchill;
+const preloadImage = (img) => {
+  const src = img.getAttribute('data-src');
+  if (!src) {
+    return;
+  }
+  img.src = src;
 }
 
-setWindChill(4, 33);
+const io = new IntersectionObserver((entries, io) => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            preloadImage(entry.target);
+            io.unobserve(entry.target);
+        }
+    });
+}, options);
 
-// Days since last visit
-const MILLIS_PER_DAY = 24 * 60 * 60 * 1000;
-let lastVisitString = localStorage.getItem("lastVisit");
-let visitspan = document.querySelector('#days-since-visit');
+images.forEach(image => {
+    io.observe(image);
+});
 
-if (lastVisitString==null){        
-    visitspan.textContent = '0';
-}
-else{
-    lastVisitDate=new Date(lastVisitString);
-    daysSinceLastVisit = Math.floor((today.getTime() - lastVisitDate.getTime()) / MILLIS_PER_DAY);
-    visitspan.textContent = daysSinceLastVisit;
-}
-localStorage.setItem("lastVisit", today.toLocaleDateString());
-
-// Date page loaded for join page
-dateAccessed = new Date();
-
-hiddenField = document.querySelector(".hidden-field").value;
-hiddenField = dateAccessed;

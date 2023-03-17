@@ -1,9 +1,6 @@
-// Day of the week
-const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-	now
-);
-document.querySelector(".date p").textContent = fulldate;
+// This sets today's date in the header
+const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format( new Date() );
+document.querySelector(".header-today p").textContent = fulldate;
 
 // Meeting announcement to appear on Mondays and Tuesdays
 const d = new Date();
