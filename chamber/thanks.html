@@ -2,89 +2,80 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <meta name="description" content="Seattle Chamber of Commerce site for WDD230">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="wdd230 Chamber Home Page for Emily Barker">
+    <link rel="icon" href="favicon.ico">
 
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/site.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
     
     <script src="scripts/main.js"></script>
     <script src="scripts/header-footer.js"></script>
-    <script src="scripts/visit.js"></script>
-    <script src="scripts/thanks.js"></script>
-    
-    <title>Syringa Unite Thanks Page</title>
+
+    <title>Syringa Unite Home Page</title>
 </head>
 <body>
-    <div class="banner">
-        <div class="banner-content">
-            <div class="banner-text"><p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p></div>
-            <button type="button" class="banner-button"><img src="images/X.png" alt="Close Button"></button>
+  <header>
+    <div id="meeting">
+        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+    </div>
+    <div class="topHeader">
+      <!-- Logo -->
+        <img id="logo" href="https://emilybark3r.github.io/wdd230/chamber/index.html" src="./images/Syringa_Unite_Logo.png" alt="logo">
+        <div id="title">
+            <h1>Syringa Unite</h1>
+            <h2>Chamber of Commerce</h2>
+        </div>
+        <div id="social-logos">
+              <a href="https://www.instagram.com" target="_blank">
+                <img src="./images/instagram_logo.png" alt="instagram"/></a>
+              <a href="https://www.facebook.com" target="_blank">
+                <img src="./images/facebook_logo.png" alt="facebook"/></a>
         </div>
     </div>
-    <header>
-        <div class="header-top">        
-            <div class="header-logo">
-                <a href="./index.html"><img src="./images/Syringa_Unite_Logo.png" alt="Syringa Unite Logo"/></a>            
-            </div>          
-            <div class="header-title">
-                <h1>Syringa Unite</h1>
-                <h2>Chamber of Commerce</h2>
-            </div>
-                <div class="header-icons">
-                    <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram_logo.png" alt="instagram"/></a>
-                    <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook_logo.png" alt="facebook"/></a>
-                </div>
-        </div>
-        <nav>
-          <button id="hamburger-menu">
-            <span id="hamburger-x"><img src="./images/hamburger-close.png"></span>
-            <span id="hamburger-equiv"><img src="./images/hamburger.png"></span>
-          </button>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-            <div class="date"><p></p></div>
-      </header>
+    <nav>
+      <!-- hamburger button -->
+        <button id="hamburger-button">
+            <span id="hamburger-equiv"><img src="./images/hamburger.png" alt="Hamburger icon"></span>
+        </button>
+        <ul id="navUl" class="hide">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./discover.html">Discover</a></li>
+            <li><a href="./directory.html">Directory</a></li>
+            <li><a href="./join.html">Join</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="date"><p></p></div>
+</header>
 
-    <section class="date"></section>
-
-    <main class="thanks">
-        <h1>Thank you for your submission.</h1>
-        <h3>We will get back to you shortly!</h3>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-          <div class="footer-logo">
-            <img src="./images/Syringa_Unite_Logo.png" alt="Syringa Unite Logo"/>
-          </div>
-          <div class="footer-contact">
-            <h3>Syringa Unite Chamber of Commerce</h3>
-            <p>247 E 4th N<br />St Anthony, ID 83445</p>
-            <p>info@syringaunite.org</a></p>
-            <p>571-919-0314</p>
-          </div>
-          <div class="footer-map">
-            <p><img src="images/rsz_map-removebg-preview.png" alt="map"></p>
-            <a href="https://goo.gl/maps/ZXdUAmfWZPx3Y2kW8" target="_blank">Location Map</a>
-          </div>
-        </div>
-        <hr />
-        <div class="footer-base">
-          <p>&copy; <span id="currentyear"></span> | Emily Barker | Rexburg, ID | Last Updated: <span id="lastmodified"></span></p>
-        </div>
+  <main class="thanks">
+    <h1>Thank you for your submission.</h1>
+      <h3>We will get back to you shortly!</h3>
+  </main>
+<footer>
+  <div class="footer-top">
+    <div class="footer-logo">
+      <img src="./images/Syringa_Unite_Logo.png" alt="Logo">
+    </div>
+    <div class="footer-contact">
+      <h3>Syringa Unite Chamber of Commerce</h3>
+      <p>247 E 4th N<br>St Anthony, ID 83445</p>
+      <p><a href="info@MountainCreekChamber.org">info@SyringaUnite.org</a></p>
+      <p>842-871-1964</p>
+    </div>
+    <div class="footer-map">
+      <p><img src="./images/rsz_map-removebg-preview.png" alt="google map"></p>
+      <a href="https://goo.gl/maps/ZXdUAmfWZPx3Y2kW8" target="_blank">Location Map</a>
+    </div>
+  </div>
+  <div class="footer-base">
+    <p>&copy; <span id="currentyear"></span> | Emily Barker | Rexburg, ID | Last Updated: <span id="lastmodified"></span></p>
+  </div>
 </footer>
-</body>
-
+  </body>
 </html>
