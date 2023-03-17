@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/large.css">
     
-    <script src="scripts/main.js"></script>
-    <script src="scripts/header-footer.js"></script>
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/header-footer.js" defer></script>
+    <script src="scripts/visit.js" defer></script>
+    <script src="scripts/thanks.js" defer></script>
 
     <title>Syringa Unite Home Page</title>
 </head>
@@ -73,9 +75,10 @@
       <a href="https://goo.gl/maps/ZXdUAmfWZPx3Y2kW8" target="_blank">Location Map</a>
     </div>
   </div>
-  <div class="footer-base">
-    <p>&copy; <span id="currentyear"></span> | Emily Barker | Rexburg, ID | Last Updated: <span id="lastmodified"></span></p>
-  </div>
+  <section id="footer-base">
+      <p>&copy; <span id="copyrightYear"></span> Emily Barker | Rexburg Idaho | WDD230 Project</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+</section>
 </footer>
   </body>
 </html>

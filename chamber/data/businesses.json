@@ -1,0 +1,102 @@
+{
+    "businesses": [
+    {
+        "businessName" : "Idaho Art Lab",
+        "streetAddress" : "2355 S. Yellowstone Hwy",
+        "cityStateZip" : "St. Anthony, ID, 83445",
+        "imgURL" : "images/ArtLab.png",
+        "websiteURL" : "https://www.idahoartlab.org/",
+        "membershipLevel" : "gold"
+    },
+
+    {
+        "businessName" : "Homestead Assisted Living",
+        "streetAddress" : "610 N Bridge",
+        "cityStateZip" : "St. Anthony, ID, 83445",
+        "imgURL" : "images/TheHomestead.png",
+        "websiteURL" : "https://thehomesteadliving.com/",
+        "membershipLevel" : "silver"
+
+    },
+
+    {
+        "businessName" : "Upper Valley Association of Realtors",
+        "streetAddress" : "859 South Yellowstone Hwy",
+        "cityStateZip" : "St. Anthony, ID, 83445",
+        "imgURL" : "images/UpperValley.jpg",
+        "websiteURL" : "http://www.uvarealtors.com/home.html",
+        "membershipLevel" : "silver"
+
+    },
+
+    {
+        "businessName" : "Dan's Ace Hardware",
+        "streetAddress" : "120 N Bridge St.",
+        "cityStateZip" : "St. Anthony, ID, 83445",
+        "imgURL" : "images/AceHardware.jpg",
+        "websiteURL" : "https://www.acehardware.com/store-details/15551",
+        "membershipLevel" : "gold"
+
+    },
+
+    {
+        "businessName" : "Miller Tree Service",
+        "streetAddress" : "25 S 9th W",
+        "cityStateZip" : "St. Anthony, ID, 83445",
+        "imgURL" : "images/millers.png",
+        "websiteURL" : "https://www.millertrees.com/",
+        "membershipLevel" : "gold"
+
+    },
+
+    {
+        "businessName" : "Anytime Fitness",
+        "streetAddress" : "104 Bridge St.",
+        "cityStateZip" : "St. Anthony, ID, 83445",
+        "imgURL" : "images/anytimefitness.jpg",
+        "websiteURL" : "https://www.anytimefitness.com/gyms/4102/st-anthony-id-83445/",
+        "membershipLevel" : "gold"
+
+    },
+
+    {
+        "businessName" : "Black Bear Family Farms",
+        "streetAddress" : "125 S 12th W",
+        "cityStateZip" : "St. Anthony, ID, 83445",
+        "imgURL" : "images/blackbear.png",
+        "websiteURL" : "https://www.blackbearfamilyfarms.org/",
+        "membershipLevel" : "gold"
+
+    },
+
+    {
+        "businessName" : "Willmore Lumber Co.",
+        "streetAddress" : "1205 S. Yellowstone Hwy",
+        "cityStateZip" : "St. Anthony, ID, 83445",
+        "imgURL" : "images/willmorelumber.jpg",
+        "websiteURL" : "https://www.willmorelumberco.com/",
+        "membershipLevel" : "silver"
+
+    },
+
+    {
+        "businessName" : "Glenwood Snacks",
+        "streetAddress" : "211 Industrial Park Rd",
+        "cityStateZip" : "St. Anthony, ID, 83445",
+        "imgURL" : "images/glenwood.jpg",
+        "websiteURL" : "https://glenwoodsnacks.com/",
+        "membershipLevel" : "gold"
+
+    },
+
+    {
+        "businessName" : "Sassy Flowers",
+        "streetAddress" : "52 N Bridge St #2129",
+        "cityStateZip" : "St. Anthony, ID, 83445",
+        "imgURL" : "images/flowers.jpg",
+        "websiteURL" : "https://www.sassyfloral.com/",
+        "membershipLevel" : "gold"
+
+    }
+]
+}

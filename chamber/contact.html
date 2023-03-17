@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <meta name="description" content="wdd230 Chamber Home Page for Emily Barker">
+    <link rel="icon" href="favicon.ico">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/header-footer.js" defer></script>
+    <script src="scripts/visit.js" defer></script>
+    
+    <title>Syringa Unite Discover Page</title>
 </head>
 <body>
-    
+  <header>
+    <div id="meeting">
+        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+    </div>
+    <div class="topHeader">
+      <!-- Logo -->
+        <img id="logo" href="./index.html" src="./images/Syringa_Unite_Logo.png" alt="logo">
+        <div id="title">
+            <h1>Syringa Unite</h1>
+            <h2>Chamber of Commerce</h2>
+        </div>
+        <div id="social-logos">
+              <a href="https://www.instagram.com" target="_blank">
+                <img src="./images/instagram_logo.png" alt="instagram"/></a>
+              <a href="https://www.facebook.com" target="_blank">
+                <img src="./images/facebook_logo.png" alt="facebook"/></a>
+        </div>
+    </div>
+    <nav>
+        <button id="hamburger-button">
+            <span id="hamburger-equiv"><img src="./images/hamburger.png" alt="Hamburger icon"></span>
+        </button>
+        <ul id="navUl" class="hide">
+            <li><a href="./index.html">Home</a></li>
+            <li><a class="active" href="./discover.html">Discover</a></li>
+            <li><a href="./directory.html">Directory</a></li>
+            <li><a href="./join.html">Join</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="date"><p></p></div>
+</header>
+
 </body>
 </html>
