@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bountiful Foods Final Project Website">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="./scripts/weather.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Delicious+Handrawn&family=Lato&family=Roboto&display=swap" rel="stylesheet">
+    
+    <title>Bountiful Foods</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="index.html" class="logo"><img href="index.html" src="images/logo-transparent-png.png" 
+                alt="logo" width="350" height="200"></a>
+            <div class="header-right">
+              <a class="active" href="index.html">Home</a>
+              <a href="fresh.html">Fresh</a>
+              <a href="order.html">Order Confirmation</a>
+              <a href="contact.html">Contact</a>
+              <a href="about.html">About Us</a>
+            </div>
+                <div id="social-logos">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="images/instagram-icon.png" 
+                        alt="instagram" width="250" height="50"/></a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="images/facebook-icon.png" 
+                        alt="facebook" width="250" height="45"/></a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="images/twitter-icon.png" 
+                        alt="twitter" width="250" height="50"/></a>
+                </div>
+        </div>
+        <hr>
+    </header>
+    <main> 
+        <!-- myofd = make your own fruit drink -->
+        <section id="myofd">
+                <div class="herodiv">
+                    <picture>
+                        <img src="images/fruit drink.jpg" alt="myofd">
+                    </picture>
+                    <div class="picbutton">
+                        <a href="./fresh.html"><button> Try Making Your Own Drink!</button></a>
+                    </div>
+                    <section class="welcometo">
+                        <h2>Welcome to Bountiful Foods</h2>
+                    </section>
+                </div>
+        </section>
+            <!-- Slideshow container -->
+            <hr>
+            <div class="slideshow-container">
+                <h1 id="slideshowh1">Learn more about Carlsbad California</h1>
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                    <img src="images/Carlsbad, California.jpg" style="width:100%">
+                <div class="text">Fun fact about Carlsbad: The first skateboard park in the world was in Carlsbad. It was so popular because it gave surfers something to do while they couldn't surf.</div>
+            </div>
+            <div class="mySlides fade">
+                    <img src="images/Carlsbad, California Farmers Market.jpg" style="width:100%">
+                <div class="text">Street Farmer's markets every wednesday. A great place to get fresh fruits, vegetables, jams, drinks, and more.</div>
+            </div>
+            <div class="mySlides fade">
+                    <img src="images/Carlsbad, California coast.jpg" style="width:100%">
+                <div class="text">Dont forget to check out the beaches while youre in Carlsbad California. Great waters for swimmers, surfers, or people looking to get a nice even tan.</div>
+            </div>
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <hr>
+  <!-- weather. Credit goes to https://weatherwidget.io/ -->
+  <a class="weatherwidget-io" href="https://forecast7.com/en/33d16n117d35/carlsbad/?unit=us" data-label_1="CARLSBAD" data-label_2="WEATHER" data-theme="weather_one" >CARLSBAD WEATHER</a>
+        <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+  <hr>
+    </main>
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="images/instagram-icon.png" alt="instagram"/>
+                            <i class="icon ion-social-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="images/facebook-icon.png" alt="facebook"/>
+                        <i class="icon ion-social-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter-icon.png" alt="twitter"/></a>
+                        <i class="icon ion-social-twitter"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="fresh.html">Fresh</a></li>
+                <li class="list-inline-item"><a href="order.html">Order Confirmation</a></li>
+                <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+                <li class="list-inline-item"><a href="about.html">About Us</a></li>
+            </ul>
+            <p class="copyright">&copy; <span id="currentyear"></span> | Emily Barker | Rexburg, ID | Last Updated: <span id="lastmodified"></span></p>
+        </footer>
+</body>
+</html>

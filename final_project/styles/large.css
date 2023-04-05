@@ -1,0 +1,16 @@
+@media only screen and (min-width: 64rem) {
+    /* Current Weather */
+    #currentWeather {
+      padding-left: 7rem;
+      padding-right: 7rem;
+    }
+  
+    /* Forecast */
+    .forecast-box {
+      gap: 100px;
+    }
+
+  #hamburger-button{
+      display: none;
+  }
+}
