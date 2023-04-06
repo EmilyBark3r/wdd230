@@ -152,6 +152,11 @@ img {
     font-weight: 800;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .picbutton button:hover {
     background-color: #B6C4A2;
     color: black;
