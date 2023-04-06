@@ -39,7 +39,7 @@ hr {
   }
   
   /* Change the background color on mouse-over */
-  .header a:hover {
+  .header-right a:hover {
     background-color: #967AA1;
     color: white;
   }
@@ -71,7 +71,7 @@ hr {
 .footer-basic {
     padding:40px 0;
     background-color:#ffffff;
-    color:#4b4c4d;
+    color:#967AA1;
   }
   
   .footer-basic ul {
@@ -124,7 +124,7 @@ hr {
     margin-top:15px;
     text-align:center;
     font-size:13px;
-    color:#aaa;
+    color:#967AA1;
     margin-bottom:0;
   }
     
