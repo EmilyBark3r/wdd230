@@ -313,3 +313,23 @@ form input.submitBtn {
 .second-fieldset {
   margin-top: 0;
 }
+
+
+/* about us page */
+.about h1 {
+  text-align: center;
+}
+
+.about h2 {
+  text-align: center;
+}
+
+.about p {
+  text-align: center;
+  font-size: larger;
+}
+
+iframe {
+  justify-content: center;
+}
+
