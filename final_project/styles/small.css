@@ -1,5 +1,6 @@
 body {
     font-family: 'Alkatra', cursive;
+    background-color: #B6C4A2;
 }
 
 hr {
@@ -7,7 +8,7 @@ hr {
     top: 20px;
     border: none;
     height: 12px;
-    background: black;
+    background: #4B644A;
     margin-bottom: 50px;
 }
 
@@ -39,14 +40,14 @@ hr {
   
   /* Change the background color on mouse-over */
   .header a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #967AA1;
+    color: white;
   }
   
   /* Style the active/current link*/
   .header a.active {
-    background-color: dodgerblue;
-    color: white;
+    background-color: #FAAA8d;
+    color: black;
   }
   
   /* Float the link section to the right */
@@ -253,4 +254,63 @@ img {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/* fresh form */
+
+form fieldset{
+  margin: 2rem 2rem;
+  border: 4px solid #886e92;
+  max-width: 75%;
+  background-color:#967AA1;
+  border-radius: 10px;
+  padding: .5rem 2%;
+}
+
+form label.top, form div {
+  display: block;
+  padding-top: 1rem;
+  color: black;
+  font-size: 1rem;
+  font-family: 'Delicious Handrawn', cursive;
+}
+
+form label.top input, form label.top select{
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px black;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  max-width: 17.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+  display: block;
+  padding: .75rem 0;
+  color: black;
+}
+
+form input.submitBtn {
+  border: 2px solid black;
+  background-color: #FAAA8d;
+  color:black;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 2rem 0 2rem 2%;
+  width: 96%;
+  min-width: 1rem;
+  max-width: 20rem;
+}
+
+.first-fieldset h3{
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.second-fieldset {
+  margin-top: 0;
 }

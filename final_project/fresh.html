@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bountiful Foods Final Project Website">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!-- <script src="./scripts/weather.js" defer></script> -->
+    <script src="./scripts/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Delicious+Handrawn&family=Lato&family=Roboto&display=swap" rel="stylesheet">
+    
+    <title>Bountiful Foods</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="index.html" class="logo"><img href="index.html" src="images/logo-transparent-png.png" 
+                alt="logo" width="350" height="200"></a>
+            <div class="header-right">
+              <a href="index.html">Home</a>
+              <a class="active" href="fresh.html">Fresh</a>
+              <a href="order.html">Order Confirmation</a>
+              <a href="about.html">About Us</a>
+            </div>
+                <div id="social-logos">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="images/instagram-icon.png" 
+                        alt="instagram" width="250" height="50"/></a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="images/facebook-icon.png" 
+                        alt="facebook" width="250" height="45"/></a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="images/twitter-icon.png" 
+                        alt="twitter" width="250" height="50"/></a>
+                </div>
+        </div>
+        <hr>
+    </header>
+<main>
+    <main class="main-join">
+        <form method="get" action="order.html">
+            <fieldset class="first-fieldset">  
+                <input class="hidden-field" type="hidden" name="date" value="" />
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name <input type="text" name="lname"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>  
+            </fieldset>
+                <fieldset>
+                    <label class="fruit1">Choose a Fruit:</label>
+                    <select name="fruits" id="fruits" required>
+                        <option value="">- - Select - -</option>
+                        <option value="apple">Apple</option>
+                        <option value="apricot">Apricot</option>
+                        <option value="avocado">Avocado</option>
+                        <option value="banana">Banana</option>
+                        <option value="blackberry">Blackberry</option>
+                        <option value="blueberry">Blueberry</option>
+                        <option value="cherry">Cherry</option>
+                        <option value="cranberry">Cranberry</option>
+                        <option value="dragonfruit">Dragonfruit</option>
+                        <option value="durian">Durian</option>
+                        <option value="feijoa">Feijoa</option>
+                        <option value="fig">Fig</option>
+                        <option value="gooseberry">Gooseberry</option>
+                        <option value="grape">Grape</option>
+                        <option value="greenapple">Green Apple</option>
+                        <option value="guava">Guava</option>
+                        <option value="kiwi">Kiwi</option>
+                        <option value="kiwifruit">Kiwi Fruit</option>
+                        <option value="lemon">Lemon</option>
+                        <option value="lime">lime</option>
+                        <option value="lingonberry">Lingonberry</option>
+                        <option value="lychee">Lychee</option>
+                        <option value="mango">Mango</option>
+                        <option value="melon">Melon</option>
+                        <option value="morus">Morus</option>
+                        <option value="orange">Orange</option>
+                        <option value="papaya">Papaya</option>
+                        <option value="passionfruit">Passion Fruit</option>
+                        <option value="peach">Peach</option>
+                        <option value="pear">Pear</option>
+                        <option value="persimmon">Persimmon</option>
+                        <option value="pineapple">Pineapple</option>
+                        <option value="pitahaya">Pitahaya</option>
+                        <option value="plum">Plum</option>
+                        <option value="pomegranate">Pomegranate</option>
+                        <option value="raspberry">Raspberry</option>
+                        <option value="strawberry">Strawberry</option>
+                        <option value="tangerine">Tangerine</option>
+                        <option value="tomato">Tomato</option>
+                        <option value="watermelon">Watermelon</option>
+                    </select>
+                    <label class="fruit2">Choose a Fruit:</label>
+                    <select name="fruits" id="fruits" required>
+                        <option value="">- - Select - -</option>
+                        <option value="apple">Apple</option>
+                        <option value="apricot">Apricot</option>
+                        <option value="avocado">Avocado</option>
+                        <option value="banana">Banana</option>
+                        <option value="blackberry">Blackberry</option>
+                        <option value="blueberry">Blueberry</option>
+                        <option value="cherry">Cherry</option>
+                        <option value="cranberry">Cranberry</option>
+                        <option value="dragonfruit">Dragonfruit</option>
+                        <option value="durian">Durian</option>
+                        <option value="feijoa">Feijoa</option>
+                        <option value="fig">Fig</option>
+                        <option value="gooseberry">Gooseberry</option>
+                        <option value="grape">Grape</option>
+                        <option value="greenapple">Green Apple</option>
+                        <option value="guava">Guava</option>
+                        <option value="kiwi">Kiwi</option>
+                        <option value="kiwifruit">Kiwi Fruit</option>
+                        <option value="lemon">Lemon</option>
+                        <option value="lime">lime</option>
+                        <option value="lingonberry">Lingonberry</option>
+                        <option value="lychee">Lychee</option>
+                        <option value="mango">Mango</option>
+                        <option value="melon">Melon</option>
+                        <option value="morus">Morus</option>
+                        <option value="orange">Orange</option>
+                        <option value="papaya">Papaya</option>
+                        <option value="passionfruit">Passion Fruit</option>
+                        <option value="peach">Peach</option>
+                        <option value="pear">Pear</option>
+                        <option value="persimmon">Persimmon</option>
+                        <option value="pineapple">Pineapple</option>
+                        <option value="pitahaya">Pitahaya</option>
+                        <option value="plum">Plum</option>
+                        <option value="pomegranate">Pomegranate</option>
+                        <option value="raspberry">Raspberry</option>
+                        <option value="strawberry">Strawberry</option>
+                        <option value="tangerine">Tangerine</option>
+                        <option value="tomato">Tomato</option>
+                        <option value="watermelon">Watermelon</option>
+                    </select>
+                    <label class="fruit3">Choose a Fruit:</label>
+                    <select name="fruits" id="fruits" required>
+                        <option value="">- - Select - -</option>
+                        <option value="apple">Apple</option>
+                        <option value="apricot">Apricot</option>
+                        <option value="avocado">Avocado</option>
+                        <option value="banana">Banana</option>
+                        <option value="blackberry">Blackberry</option>
+                        <option value="blueberry">Blueberry</option>
+                        <option value="cherry">Cherry</option>
+                        <option value="cranberry">Cranberry</option>
+                        <option value="dragonfruit">Dragonfruit</option>
+                        <option value="durian">Durian</option>
+                        <option value="feijoa">Feijoa</option>
+                        <option value="fig">Fig</option>
+                        <option value="gooseberry">Gooseberry</option>
+                        <option value="grape">Grape</option>
+                        <option value="greenapple">Green Apple</option>
+                        <option value="guava">Guava</option>
+                        <option value="kiwi">Kiwi</option>
+                        <option value="kiwifruit">Kiwi Fruit</option>
+                        <option value="lemon">Lemon</option>
+                        <option value="lime">lime</option>
+                        <option value="lingonberry">Lingonberry</option>
+                        <option value="lychee">Lychee</option>
+                        <option value="mango">Mango</option>
+                        <option value="melon">Melon</option>
+                        <option value="morus">Morus</option>
+                        <option value="orange">Orange</option>
+                        <option value="papaya">Papaya</option>
+                        <option value="passionfruit">Passion Fruit</option>
+                        <option value="peach">Peach</option>
+                        <option value="pear">Pear</option>
+                        <option value="persimmon">Persimmon</option>
+                        <option value="pineapple">Pineapple</option>
+                        <option value="pitahaya">Pitahaya</option>
+                        <option value="plum">Plum</option>
+                        <option value="pomegranate">Pomegranate</option>
+                        <option value="raspberry">Raspberry</option>
+                        <option value="strawberry">Strawberry</option>
+                        <option value="tangerine">Tangerine</option>
+                        <option value="tomato">Tomato</option>
+                        <option value="watermelon">Watermelon</option>
+                    </select>
+                </fieldset>
+                <fieldset><!-- special instructions -->
+                    <textarea rows="5" cols="40" name="instructions">Enter any special instructions here..</textarea></fieldset>
+                    <fieldset>  
+                        <input type="submit" value="Place Your Order!" class="submitBtn">
+                    </fieldset>
+        </form>
+</main>
+<div class="footer-basic">
+    <footer>
+        <div class="social">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/instagram-icon.png" alt="instagram"/>
+                        <i class="icon ion-social-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook-icon.png" alt="facebook"/>
+                    <i class="icon ion-social-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter-icon.png" alt="twitter"/></a>
+                    <i class="icon ion-social-twitter"></i></a>
+        </div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="index.html">Home</a></li>
+            <li class="list-inline-item"><a href="fresh.html">Fresh</a></li>
+            <li class="list-inline-item"><a href="order.html">Order Confirmation</a></li>
+            <li class="list-inline-item"><a href="about.html">About Us</a></li>
+        </ul>
+        <p class="copyright">&copy; <span id="currentyear"></span> | Emily Barker | Carlsbad California | Last Updated: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
